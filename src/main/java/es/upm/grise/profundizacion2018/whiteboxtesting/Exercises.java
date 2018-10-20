@@ -2,14 +2,14 @@ package es.upm.grise.profundizacion2018.whiteboxtesting;
 
 public class Exercises {
 
-	public float foo1(float x, float y) {     
+	public static float foo1(float x, float y) {     
 		if (x > 5)    
 			x += 10;
 		y = y / x;   
 		return y; 
 	} 
 
-	public float foo2(float a, float b) {    
+	public static float foo2(float a, float b) {    
 		if (a > b) {
 			float tmp;
 			tmp = b;

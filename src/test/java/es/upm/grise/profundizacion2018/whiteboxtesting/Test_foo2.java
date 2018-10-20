@@ -7,8 +7,9 @@ import org.junit.Test;
 public class Test_foo2 {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void aMayorBcosAMenor0() {
+		float b = 8; //cos(8) = -0,14
+		float a = 10;
+		assertEquals(2,Exercises.foo2(a,b),0.01);
 	}
-
 }
