@@ -38,8 +38,12 @@ public class Exercises {
 	public class ConvertInt {
 		public int convert(char[] str) throws Exception{
 			if (str.length > 6) 
-				throw new Exception(); 
-			int number=0;int digit; int i=0;
+				throw new Exception();
+			
+			int number=0;
+			int digit;
+			int i=0;
+			
 			if (str[0]=='-') 
 				i=1;
 			for(; i<str.length; i++){
