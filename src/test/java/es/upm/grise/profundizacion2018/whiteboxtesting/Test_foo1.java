@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class Test_foo1 {
 
-	private Exercises ex = new Exercises();;
+	private Exercises ex = new Exercises();
 		
 	@Test
 	public void x4doesnotadd10() {
