@@ -6,9 +6,15 @@ import org.junit.Test;
 
 public class Test_foo2 {
 
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
+	Exercises ex = new Exercises();
 
+	@Test
+	public void test_IntercambioYFalsoCos() {
+		assertTrue(ex.foo2(4, 2) == 2);
+	}
+	
+	@Test
+	public void test_VerdaderoCos() {		
+		assertTrue(ex.foo2(1, 2) == (float)1.5);
+	}
 }

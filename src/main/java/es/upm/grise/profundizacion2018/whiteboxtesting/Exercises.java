@@ -5,7 +5,7 @@ public class Exercises {
 	public float foo1(float x, float y) {     
 		if (x > 5)    
 			x += 10;
-		y = y / x;   
+		y = y / x; 
 		return y; 
 	} 
 
@@ -43,7 +43,7 @@ public class Exercises {
 			if (str[0]=='-') 
 				i=1;
 			for(; i<str.length; i++){
-				digit = str[i] - '\0';
+				digit = str[i] - '0';
 				number = number * 10 + digit;
 			}     	
 			if (str[0]=='-') 
