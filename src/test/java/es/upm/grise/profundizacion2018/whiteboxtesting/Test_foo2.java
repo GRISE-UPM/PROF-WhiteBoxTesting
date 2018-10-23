@@ -35,6 +35,7 @@ public class Test_foo2 {
 		assertEquals(2.0f, testerFoo2_3.foo2(1f, 5f),0.1f);
 	}
 	
+	// Cover last branch with b > a
 	@Test
 	public void test4() {
 		assertEquals(2.5f, testerFoo2_4.foo2(1f, 4f),0.1f);

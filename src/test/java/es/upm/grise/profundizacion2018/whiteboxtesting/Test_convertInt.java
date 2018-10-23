@@ -23,6 +23,10 @@ public class Test_convertInt {
 	}
 
 	// Testing second case, exceptions and str[0] = '-'
+	
+	/**
+	 * Exceptions are not covered in eclemma with junit4 dude to the JaCoCo code coverage library used by eclemma: https://www.eclemma.org/faq.html
+	 */
 
 	// -32768 ------------- 0 ------------- 32768
 	

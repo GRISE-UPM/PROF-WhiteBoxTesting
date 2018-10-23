@@ -9,7 +9,8 @@ public class Test_foo1 {
 	Exercises testerFoo1_1 = new Exercises();
 	Exercises testerFoo1_2 = new Exercises();
 
-	// 
+	// Test 1: x < 5
+	// Test 2: x > 5
 	
 	@Test
 	public void testfoo1lessthan5() {
