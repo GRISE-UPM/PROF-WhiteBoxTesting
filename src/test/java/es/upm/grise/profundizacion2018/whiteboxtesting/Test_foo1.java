@@ -10,12 +10,12 @@ public class Test_foo1 {
 
 	@Test
 	public void test_xMenorQue5() {
-		assertTrue(ex.foo1(1, 1) == 1);
+		assertEquals(ex.foo1(1, 1), 1, 0.01);
 	}
 	
 	@Test
 	public void test_xMayorQue5() {
-		assertTrue(ex.foo1(10, 1) == (float)(0.05));
+		assertEquals(ex.foo1(10, 1), (float)(0.05), 0.01);
 	}
 
 }

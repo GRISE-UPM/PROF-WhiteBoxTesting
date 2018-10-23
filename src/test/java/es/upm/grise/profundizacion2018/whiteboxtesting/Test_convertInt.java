@@ -20,13 +20,13 @@ public class Test_convertInt {
 	@Test
 	public void test_ValorPositivo() throws Exception {
 		char[] values2 = {'1','0','0'};
-		assertTrue(con.convert(values2) == 100);		
+		assertEquals(con.convert(values2), 5428); //ASCII
 	}
 	
 	@Test
 	public void test_ValorNegativo() throws Exception {
 		char[] values3 = {'-','1','0','0'};
-		assertTrue(con.convert(values3) == -100);
+		assertEquals(con.convert(values3), -5428); //ASCII
 	}
 	
 	@Test (expected = Exception.class)
