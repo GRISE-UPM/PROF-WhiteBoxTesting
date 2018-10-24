@@ -1,17 +1,19 @@
 package es.upm.grise.profundizacion2018.whiteboxtesting;
 
+import es.upm.grise.profundizacion2018.whiteboxtesting.Exercises.ConvertInt;
+
 public class Exercises {
 
-	public float foo1(float x, float y) {     
+	public int foo1(int x, int y) {     
 		if (x > 5)    
 			x += 10;
 		y = y / x;   
 		return y; 
 	} 
 
-	public float foo2(float a, float b) {    
+	public int foo2(int a, int b) {    
 		if (a > b) {
-			float tmp;
+			int tmp;
 			tmp = b;
 			b = a; 
 			a = tmp;
@@ -36,6 +38,7 @@ public class Exercises {
 	}
 
 	public class ConvertInt {
+
 		public int convert(char[] str) throws Exception{
 			if (str.length > 6) 
 				throw new Exception(); 
@@ -53,4 +56,6 @@ public class Exercises {
 			return number;
 		}
 	}
+
 }
+
