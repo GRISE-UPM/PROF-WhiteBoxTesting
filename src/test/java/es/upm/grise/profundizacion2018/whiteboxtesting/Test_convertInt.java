@@ -72,10 +72,10 @@ public class Test_convertInt {
 	public void test_5() {
             try{
                 exToTest.convert(new char[] {'2', '3','4','5','6'});
-                fail();
+                fail("No ha saltado la Ex.");
             }
             catch(Exception ex){
-                fail("No deberia haber saltado una Ex.");
+                //Ha saltado la excepcion como debía hacer
             }		
 	}
         /**
