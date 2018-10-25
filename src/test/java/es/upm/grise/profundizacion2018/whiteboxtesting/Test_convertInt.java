@@ -53,10 +53,23 @@ public class Test_convertInt {
                             
 	}
         /**
-         * Test para ver si convierte adecuadamente ASCI
+         * Test para ver si convierte adecuadamente ASCI(negativo)
          */
         @Test
 	public void test_4() {
+            try{
+                assertEquals((int)exToTest.convert(new char[] { '-','3','4'}), -562);
+            }
+            catch(Exception ex){
+                fail("No deberia haber saltado una Ex.");
+            }
+		
+	}
+        /**
+         * Test para ver si convierte adecuadamente ASCI
+         */
+        @Test
+	public void test_5() {
             try{
                 assertEquals((int)exToTest.convert(new char[] { '3','4'}), 562);
             }
@@ -69,7 +82,7 @@ public class Test_convertInt {
          * Test para ver si salta una excepcion ante numeros mayores que 32767
          */
 	@Test 
-	public void test_5() {
+	public void test_6() {
             try{
                 exToTest.convert(new char[] {'2', '3','4','5','6'});
                 fail("No ha saltado la Ex.");
@@ -82,7 +95,7 @@ public class Test_convertInt {
          * Test para ver si salta una excepcion ante numeros menores que -32767
          */
         @Test 
-	public void test_6() {
+	public void test_7() {
             try{
                 exToTest.convert(new char[] {'-','2', '3','4','5','6'});
                 fail("No ha saltado la Ex.");
