@@ -34,6 +34,10 @@ public class Exercises {
 		}
 		return max_value;
 	}
+	public int convert(char[] str) throws Exception {
+	    ConvertInt convertInt = new ConvertInt();
+	    return convertInt.convert(str);
+    }
 
 	public class ConvertInt {
 		public int convert(char[] str) throws Exception{
