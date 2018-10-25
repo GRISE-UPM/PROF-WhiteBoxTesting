@@ -16,7 +16,8 @@ public class Exercises {
 			b = a; 
 			a = tmp;
 		}
-		if (Math.cos(a) < 0 || Math.cos(b) > 0) {
+		if (Math.cos(a) < 0 ||
+                        Math.cos(b) > 0) {
 			a = 1; b = 3;
 		}
 		return (a + b) / 2;
@@ -29,8 +30,9 @@ public class Exercises {
 		int max_value = 0;
 		for(int i = 0; i<numbers.length; i++){
 			if (numbers[i] < 0 )
-				max_value = Math.max(max_value,Math.abs(numbers[i]));
-			else	max_value = Math.max(max_value, numbers[i]);
+                            max_value = Math.max(max_value,Math.abs(numbers[i]));
+			else	
+                            max_value = Math.max(max_value, numbers[i]);
 		}
 		return max_value;
 	}
