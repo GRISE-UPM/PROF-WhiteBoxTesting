@@ -20,7 +20,7 @@ public class Exercises {
 			a = 1; b = 3;
 		}
 		return (a + b) / 2;
-	}
+	} 
 
 
 	public int max_absolute(int[] numbers){
