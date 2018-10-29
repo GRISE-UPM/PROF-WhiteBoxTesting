@@ -15,21 +15,15 @@ public class Test_maxAbsolute {
 	}
 	
 	@Test
-	public void prueba1(){
+	public void allNegatives(){
 		int[] enteros = {-1,-2,-3,-4};
 		assertEquals(exer.max_absolute(enteros), 4);
 	}
 	
 	@Test
-	public void prueba3(){
+	public void neagativeAndPositive(){
 		int[] enteros = {-4, 5};
 		assertEquals(exer.max_absolute(enteros), 5);
 	}
-	
-	/*@Test
-	public void prueba2(){
-		int[] enteros = {0, 0, 0};
-		assertEquals(exer.max_absolute(enteros), 0);
-	}*/
 
 }
