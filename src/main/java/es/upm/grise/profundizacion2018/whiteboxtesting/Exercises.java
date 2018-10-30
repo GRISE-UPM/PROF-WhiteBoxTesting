@@ -22,7 +22,6 @@ public class Exercises {
 		return (a + b) / 2;
 	}
 
-
 	public int max_absolute(int[] numbers){
 		if(numbers.length > 5)
 			return -1;
