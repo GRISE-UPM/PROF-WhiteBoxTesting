@@ -35,11 +35,7 @@ public class Exercises {
 		return max_value;
 	}
 
-	public int accesToConvert(char[] srt) throws Exception{
-		return new ConvertInt().convert(srt);
-	}
-
-	public static class ConvertInt {
+	public class ConvertInt {
 		public int convert(char[] str) throws Exception{
 			if (str.length > 6) 
 				throw new Exception(); 
@@ -47,7 +43,8 @@ public class Exercises {
 			if (str[0]=='-') 
 				i=1;
 			for(; i<str.length; i++){
-				number = number * 10 + (str[i]-'0');
+				digit = str[i] - '\0';
+				number = number * 10 + digit;
 			}     	
 			if (str[0]=='-') 
 				number =  -number;
@@ -55,7 +52,5 @@ public class Exercises {
 				throw new Exception();
 			return number;
 		}
-
-
 	}
 }
