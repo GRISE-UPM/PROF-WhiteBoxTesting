@@ -1,4 +1,4 @@
-package es.upm.grise.profundizacion2018.whiteboxtesting;
+package es.upm.grise.profundizacion.whiteboxtesting;
 
 public class Exercises {
 
@@ -23,7 +23,7 @@ public class Exercises {
 	}
 
 
-	public int max_absolute(int[] numbers){
+	public int maxAbsolute(int[] numbers){
 		if(numbers.length > 5)
 			return -1;
 		int max_value = 0;
@@ -35,7 +35,7 @@ public class Exercises {
 		return max_value;
 	}
 
-	public class ConvertInt {
+	public class convertInt {
 		public int convert(char[] str) throws Exception{
 			if (str.length > 6) 
 				throw new Exception(); 
