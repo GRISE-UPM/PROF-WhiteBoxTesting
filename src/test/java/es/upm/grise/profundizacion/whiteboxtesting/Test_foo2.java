@@ -7,8 +7,52 @@ import org.junit.Test;
 public class Test_foo2 {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testPath1() {
+		
+		float a = 1.5f, b = 2.0f, expected = (1.5f + 2.0f)/2;
+		executeTest(a, b, expected);
 	}
-
+	
+	@Test
+	public void testPath2() {
+		
+		float a = 1.0f, b = 1.0f, expected = (1 + 3)/2;
+		executeTest(a, b, expected);
+	}
+	
+	@Test
+	public void testPath3() {
+				
+		float a = 2.0f, b = 3.0f, expected = (1 + 3)/2;
+		executeTest(a, b, expected);
+	}
+	
+	@Test
+	public void testPath4() {
+				
+		float a = 2.0f, b = 1.0f, expected = (a + b)/2;
+		executeTest(a, b, expected);
+	}
+	
+	@Test
+	public void testPath5() {
+				
+		float a = 1.5f, b = 1.0f, expected = (1 + 3)/2;
+		executeTest(a, b, expected);
+	}
+	
+	@Test
+	public void testPath6() {
+				
+		float a = 3.0f, b = 2.0f, expected = (1 + 3)/2;
+		executeTest(a, b, expected);
+	}
+	
+	private void executeTest(float a, float b, float expected) {
+		
+		Exercises exercises = new Exercises();
+		
+		float result = exercises.foo2(a, b);
+		assertEquals(result, expected,0.0f);
+	}
 }
