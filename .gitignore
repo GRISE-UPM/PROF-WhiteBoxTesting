@@ -1,0 +1,7 @@
+.gitignore
+
+.idea/
+target/
+
+whiteboxtesting.iml
+pom.xml
