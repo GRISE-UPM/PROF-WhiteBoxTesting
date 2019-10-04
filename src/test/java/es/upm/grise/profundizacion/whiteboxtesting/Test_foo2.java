@@ -13,7 +13,7 @@ public class Test_foo2 {
 	
 	//primer camino, todo es falso
 	@Test
-	public void test1() {
+	public void todoFalso() {
 		Exercises ejercicio = new Exercises();
 		float a=(float) 1.5;
 		float b=(float) 3.1;
@@ -24,7 +24,7 @@ public class Test_foo2 {
 	//segundo camino, el primer if falso y el segundo es falsa 
 	//la primera parte
 	@Test
-	public void test2() {
+	public void falsoMenosLoUltimo() {
 		Exercises ejercicio = new Exercises();
 		float a=(float) 1.4;
 		float b=(float) 1.5;
@@ -34,7 +34,7 @@ public class Test_foo2 {
 	
 	//tercer camino, todo es true ahora (menos la ultima condicion del ultimo if)
 	@Test
-	public void test3() {
+	public void entramosEnIfsDesdePrincipio() {
 		Exercises ejercicio = new Exercises();
 		float a=(float) 3.14;
 		float b=(float) 3.13;
