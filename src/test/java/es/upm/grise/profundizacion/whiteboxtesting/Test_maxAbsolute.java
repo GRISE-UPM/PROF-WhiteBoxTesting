@@ -47,11 +47,11 @@ public class Test_maxAbsolute {
 	
 	
 	//con esto esta 100%coverage (cubierto) pero voy a hacer 3 pruebas de verdad
-	//que me da un poco de risa dejarlo asi
+	//porque me da un poco de risa dejarlo asi
 	//vamos a probar que efectivamente coge el mayor
 	//vamos a hacer 3 pruebas, una en la que son todos positivos, 
-	//es como la ultima pero con un array, 
-	//y otra 2 en la que son mezcla, en una saldra uno de los positivos y en la 
+	//(es como la ultima pero con un array) 
+	//y otras 2 en la que son mezcla, en una saldra uno de los positivos y en la 
 	//otra un negativo
 	@Test
 	public void arrayPositivo() {
@@ -76,5 +76,7 @@ public class Test_maxAbsolute {
 		
 		assertEquals(8, ejercicio.maxAbsolute(numbers),0.001);	
 	}
+	
+	
 	
 }
