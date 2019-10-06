@@ -35,7 +35,7 @@ public class Exercises {
 		return max_value;
 	}
 
-	public class convertInt {
+	public class ConvertInt {
 		public int convert(char[] str) throws Exception{
 			if (str.length > 6) 
 				throw new Exception(); 
