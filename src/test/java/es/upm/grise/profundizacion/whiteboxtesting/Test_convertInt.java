@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class Test_convertInt {
-
+    //Prueba sin if
 	@Test
 	public void testCasoNormal() throws Exception {
 		Exercises ejemplo = new Exercises();
@@ -13,6 +13,7 @@ public class Test_convertInt {
 		char [] arrayPrueba= {'a','b'};
 		assertEquals(1068, ejemplo1.convert(arrayPrueba));
 	}
+	//Prueba primer carácter -
 	@Test
 	public void testCasoPrimerMenos() throws Exception {
 		Exercises ejemplo = new Exercises();
@@ -20,6 +21,7 @@ public class Test_convertInt {
 		char [] arrayPrueba= {'-','a','b'};
 		assertEquals(-1068, ejemplo1.convert(arrayPrueba));
 	}
+	//Prueba mas de seis carácteres
 	@Test
 	public void testCasoMasSeisCaracteres(){
 		Exercises ejemplo = new Exercises();
@@ -32,6 +34,7 @@ public class Test_convertInt {
 			assertTrue("Exception detected", true);
 		}
 	}
+	//Prueba número mayor que 32767
 	@Test
 	public void testCasoMas32767(){
 		Exercises ejemplo = new Exercises();
