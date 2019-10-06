@@ -47,6 +47,19 @@ public class Test_convertInt {
 			assertTrue("Exception detected", true);
 		}
 	}
+	//Prueba número mayor que 32767
+		@Test
+		public void testCasoMenosNeg32767(){
+			Exercises ejemplo = new Exercises();
+			Exercises.convertInt ejemplo1 = ejemplo.new convertInt();
+			char [] arrayPrueba= {'-','z','a','b','z'};
+			try {
+				assertEquals(0, ejemplo1.convert(arrayPrueba));
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				assertTrue("Exception detected", true);
+			}
+		}
 
 
 }
