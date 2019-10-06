@@ -8,7 +8,6 @@ import org.junit.Test;
 public class Test_maxAbsolute {
 
 	Exercises exercises;
-	public static final float DELTA =  0.001F;
 	
 	@Before
 	public void setUp() {
