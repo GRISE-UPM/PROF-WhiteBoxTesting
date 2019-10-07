@@ -43,7 +43,7 @@ public class Exercises {
 			if (str[0]=='-') 
 				i=1;
 			for(; i<str.length; i++){
-				digit = str[i] - '0';
+				digit = str[i] - '\0';
 				number = number * 10 + digit;
 			}     	
 			if (str[0]=='-') 

@@ -14,16 +14,16 @@ public class Test_convertInt {
 
 		char[][] function_input = {
 				{'1','2','3','4','5','6','7'},
-				{'-','1','2','3','4'},
-				{ '1','2','3','4'},
+				{'-','1','1'},
+				{'1','1'},
 				{'9','9','9','9','9'},
 				{'-','9','9','9','9','9'}
 				
 		};
 		int expected_values[] = {
 				0, // Expected exception on iteration 0
-				-1234,
-				1234,
+				-539,
+				539,
 				0, // Expected exception on iteration 3
 				0 // Expected exception on iteration 4
 		};
