@@ -14,7 +14,7 @@ public class Test_foo1 {
 		float x=3.0f;
 		float y=6.0f;
 		float result=2.0f;
-		assertEquals(result, this.exercises.foo1(x, y));
+		assertEquals(result, exercises.foo1(x, y));
 	}
 	//Caso 2 en el que x>5.
 	@Test
