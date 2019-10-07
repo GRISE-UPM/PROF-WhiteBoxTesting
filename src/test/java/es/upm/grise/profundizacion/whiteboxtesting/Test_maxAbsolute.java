@@ -10,14 +10,14 @@ public class Test_maxAbsolute {
 	
 	//Test para numbers.length > 5
 	@Test
-	public void test() {
+	public void test_maxAbsolute_length_bigger() {
 		assertEquals(-1,testMaxAbsolute.maxAbsolute(arrayTest = new int [] {1,2,3,4,5,6}));
 		
 	}
 	
 	//Test para funcionalidad normal del programa tanto números positivos como negativos
 	@Test
-	public void test1() {
+	public void test_maxAbsolute() {
 		assertEquals(61,testMaxAbsolute.maxAbsolute(arrayTest = new int [] {-1,2,-3,50,61}));
 		
 	}

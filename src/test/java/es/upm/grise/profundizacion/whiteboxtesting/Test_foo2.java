@@ -10,7 +10,7 @@ public class Test_foo2 {
 	
   // Test para cuando a > b
 	@Test
-	public void test_foo2_a_greater_b() {
+	public void test_foo2_greater_b() {
 		
 		assertEquals(2, testFoo2.foo2(5, 1), 0.0f);
 		
@@ -22,7 +22,7 @@ public class Test_foo2 {
 	
 	//Test para a < b
 	@Test
-	public void test_foo2_a_less_b() {
+	public void test_foo2_less_b() {
 		assertEquals(2, testFoo2.foo2(180, 200), 0.0f);
 	}
 
