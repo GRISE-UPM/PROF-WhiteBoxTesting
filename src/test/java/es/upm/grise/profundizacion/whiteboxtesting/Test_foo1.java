@@ -32,6 +32,6 @@ public class Test_foo1 {
 	private void executeTest(float x, float y, float expected) {
 
 		float result = exercises.foo1(x, y);
-		assertEquals(result, expected, 0.0f);
+		assertEquals(expected, result, 0.0f);
 	}
 }

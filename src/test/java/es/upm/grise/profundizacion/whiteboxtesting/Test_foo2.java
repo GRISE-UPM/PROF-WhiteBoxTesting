@@ -60,6 +60,6 @@ public class Test_foo2 {
 	private void executeTest(float a, float b, float expected) {
 
 		float result = exercises.foo2(a, b);
-		assertEquals(result, expected,0.0f);
+		assertEquals(expected, result,0.0f);
 	}
 }

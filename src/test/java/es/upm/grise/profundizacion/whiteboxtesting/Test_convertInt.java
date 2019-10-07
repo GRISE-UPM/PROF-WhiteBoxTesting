@@ -59,6 +59,6 @@ public class Test_convertInt {
 	private void executeTest(char[] string, int expected) throws Exception {
 
 		int result = convertInt.convert(string);
-		assertEquals(result, expected);
+		assertEquals(expected, result);
 	}
 }

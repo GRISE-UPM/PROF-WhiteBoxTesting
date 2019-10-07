@@ -51,6 +51,6 @@ public class Test_maxAbsolute {
 	private void executeTest(int[] numbers, int expected) {
 
 		int result = exercises.maxAbsolute(numbers);
-		assertEquals(result, expected);
+		assertEquals(expected, result);
 	}
 }
