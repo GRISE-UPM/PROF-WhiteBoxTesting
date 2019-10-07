@@ -10,17 +10,20 @@ public class Test_convertInt {
 	public Exercises.convertInt varTestConvert = testExercise.new convertInt();
 	public char[] testr;
 	
+	//Test para número de strlength > 6
 	@Test(expected = Exception.class)
 	public void test1() throws Exception {
 		varTestConvert.convert(testr = new char[]{'q','w','e','r','t','y','u'} );
 	}
 	
 	
+	//Test para un return de valores positivos
 	@Test
 	public void test2() throws Exception {
 		assertEquals(1067,varTestConvert.convert(testr = new char[] {'a','a'}));
 	}
 	
+	//Test para un return pasando por los if de '-' que además devolverá un valor negativo
 	@Test
 	public void test3() throws Exception{
 		assertEquals(-1022, varTestConvert.convert(testr = new char[] {'-','c',' '}));
@@ -28,11 +31,13 @@ public class Test_convertInt {
 		
 	}
 	
+	//Test para excepción por número mayor de 32767
 	@Test(expected = Exception.class)
 	public void test4() throws Exception {
 		varTestConvert.convert(testr = new char[]{'q','w','e','r','t','y'} );	
 	}
 	
+	//Test para excepción por número menor de -32768
 	@Test(expected = Exception.class)
 	public void test5() throws Exception{
 		varTestConvert.convert(testr = new char[] {'-','a','a','a','z'});
