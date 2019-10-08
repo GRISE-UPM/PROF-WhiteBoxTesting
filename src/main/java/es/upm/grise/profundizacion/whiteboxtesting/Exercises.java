@@ -1,4 +1,4 @@
-package es.upm.grise.profundizacion.whiteboxtesting;
+package main.java.es.upm.grise.profundizacion.whiteboxtesting;
 
 public class Exercises {
 

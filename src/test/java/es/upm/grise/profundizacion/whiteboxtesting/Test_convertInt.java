@@ -1,4 +1,4 @@
-package es.upm.grise.profundizacion.whiteboxtesting;
+package test.java.es.upm.grise.profundizacion.whiteboxtesting;
 
 import static org.junit.Assert.*;
 
