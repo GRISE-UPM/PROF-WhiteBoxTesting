@@ -18,7 +18,6 @@ public class Test_convertInt {
 				{'1','1'},
 				{'9','9','9','9','9'},
 				{'-','9','9','9','9','9'}
-				
 		};
 		int expected_values[] = {
 				0, // Expected exception on iteration 0

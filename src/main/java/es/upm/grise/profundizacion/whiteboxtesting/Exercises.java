@@ -6,14 +6,14 @@ public class Exercises {
 		if (x > 5)    
 			x += 10;
 		y = y / x;   
-		return y; 
+		return y;
 	} 
 
 	public float foo2(float a, float b) {    
 		if (a > b) {
 			float tmp;
 			tmp = b;
-			b = a; 
+			b = a;
 			a = tmp;
 		}
 		if (Math.cos(a) < 0 || Math.cos(b) > 0) {

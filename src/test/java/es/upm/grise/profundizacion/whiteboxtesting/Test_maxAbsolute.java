@@ -18,7 +18,7 @@ public class Test_maxAbsolute {
 		float output_values[][] = { 
 				{ -1, test.maxAbsolute(function_input[0]) },	// { Expected output, Actual output }
 				{ 1, test.maxAbsolute(function_input[1]) },
-				{ 2, test.maxAbsolute(function_input[2]) }
+				{ 2, test.maxAbsolute(function_input[2]) },
 		};
 		
 		for(int i = 0; i < output_values.length; i++)
