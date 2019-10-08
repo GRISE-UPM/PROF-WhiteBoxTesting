@@ -22,5 +22,10 @@ public class Test_foo2 {
 	public void test_b_greaterThan_a() {
 		assertEquals(-4.0, ejercicios.foo2(-5, -3), 0);
 	}
+	
+	@Test
+	public void test_b_greaterThan_a_and_cosAandB_lessThan_0() {
+		assertEquals(2.0, ejercicios.foo2(-4, -3), 0);
+	}
 
 }
