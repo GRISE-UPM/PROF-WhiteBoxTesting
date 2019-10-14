@@ -1,7 +1,9 @@
 package es.upm.grise.profundizacion.whiteboxtesting;
 
-public class Exercises {
+import org.omg.CORBA.PRIVATE_MEMBER;
 
+public class Exercises {
+	
 	public float foo1(float x, float y) {     
 		if (x > 5)    
 			x += 10;
