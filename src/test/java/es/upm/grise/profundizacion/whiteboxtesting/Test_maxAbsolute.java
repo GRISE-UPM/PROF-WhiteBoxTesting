@@ -3,10 +3,13 @@ package es.upm.grise.profundizacion.whiteboxtesting;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class Test_maxAbsolute {
 
+	// OSCAR: La complejidad ciclomática es 4. Sobra un caso de prueba
+	
 	private Exercises exercises;
 
 	@Before
@@ -36,6 +39,7 @@ public class Test_maxAbsolute {
 		executeTest(numbers, 5);
 	}
 
+	@Ignore
 	@Test
 	public void testPath4() {		
 

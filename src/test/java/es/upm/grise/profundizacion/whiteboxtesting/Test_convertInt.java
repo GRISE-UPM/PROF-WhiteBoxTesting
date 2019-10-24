@@ -5,6 +5,9 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
+//OSCAR: La complejidad ciclomática es 7, pero es cierto que se puede conseguir una cobertura del 
+// 100% con menos casos de pruena (ver soluciones).
+
 public class Test_convertInt {
 
 	private Exercises.convertInt convertInt;

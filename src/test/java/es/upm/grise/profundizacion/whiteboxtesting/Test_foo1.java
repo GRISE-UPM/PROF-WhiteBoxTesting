@@ -29,6 +29,8 @@ public class Test_foo1 {
 		executeTest(x, y, expected);
 	}
 
+	// OSCAR: No es habitual delegar la ejecución del test. En este caso es desde luego
+	// innecesario, aunque no niego que incluir helpers puede ayudar en otras circunstancias
 	private void executeTest(float x, float y, float expected) {
 
 		float result = exercises.foo1(x, y);
