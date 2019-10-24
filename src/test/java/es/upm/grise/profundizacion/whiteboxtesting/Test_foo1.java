@@ -6,6 +6,9 @@ import org.junit.Test;
 
 public class Test_foo1 {	
 	
+	//OSCAR: Es preferible que cada caso de prueba vaya en un @Test distinto. También es
+	// pposible utilizar tests parametrizados. Lo veremos en breve.
+	
 	@Test
 	public void test() {
 		Exercises test = new Exercises();
