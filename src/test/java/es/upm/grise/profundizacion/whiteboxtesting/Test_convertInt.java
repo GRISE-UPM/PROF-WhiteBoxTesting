@@ -6,6 +6,10 @@ import org.junit.Test;
 
 import es.upm.grise.profundizacion.whiteboxtesting.Exercises.convertInt;
 
+//OSCAR: La CC = 7, por lo que harían falta 7 tests. Bien es cierto que se puede conseguir
+//una cobertura del 100% con menos tests al incluir más de una rama en cada camino indepen-
+//dieste
+
 public class Test_convertInt {
 	
 	Exercises ejercicios = new Exercises();
