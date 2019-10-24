@@ -35,12 +35,12 @@ public class Test_convertInt {
 	
 	@Test (expected = Exception.class)
 	public void testNumberGraterThanPossitive() throws Exception {
-		convertInt.convert(new char[] {'0','1','1','1'}); // 60947
+		convertInt.convert(new char[] {'0','1','1','1'});
 	}
 	
 	@Test (expected = Exception.class)
 	public void testNumberLessThanNegative() throws Exception {
-		convertInt.convert(new char[] {'-','1','1','1','1'}); // - 60947
+		convertInt.convert(new char[] {'-','1','1','1','1'});
 	}
 	
 
