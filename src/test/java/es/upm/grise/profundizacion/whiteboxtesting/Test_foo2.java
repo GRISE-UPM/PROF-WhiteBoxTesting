@@ -2,7 +2,11 @@ package es.upm.grise.profundizacion.whiteboxtesting;
 
 import static org.junit.Assert.*;
 
+import org.junit.Ignore;
 import org.junit.Test;
+
+// OSCAR: CC=4, por lo que 4 casos son suficientes para obtener un 100% de cobertura. De hecho,
+// es posibe lograrla con incluso menos casos
 
 public class Test_foo2 {
 
@@ -49,6 +53,7 @@ public class Test_foo2 {
 		
 	}
 	
+	@Ignore
 	@Test
 	/**
 	 * a<b
@@ -59,6 +64,7 @@ public class Test_foo2 {
 		assertEquals((float) 2, ex.foo2(5,7),0);
 	}
 	
+	@Ignore
 	@Test
 	/**
 	 * a<b

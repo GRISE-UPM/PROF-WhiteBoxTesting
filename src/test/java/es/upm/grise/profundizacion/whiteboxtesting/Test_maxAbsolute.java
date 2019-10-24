@@ -2,7 +2,11 @@ package es.upm.grise.profundizacion.whiteboxtesting;
 
 import static org.junit.Assert.*;
 
+import org.junit.Ignore;
 import org.junit.Test;
+
+//OSCAR: CC=4, por lo que 4 casos son suficientes para obtener un 100% de cobertura. De hecho,
+//es posibe lograrla con incluso menos casos
 
 public class Test_maxAbsolute {
 
@@ -18,6 +22,7 @@ public class Test_maxAbsolute {
 		assertEquals(0, ex.maxAbsolute(new int[]{}));
 		}
 	
+	@Ignore
 	@Test
 	public void test_forIf() {
 		Exercises ex= new Exercises();

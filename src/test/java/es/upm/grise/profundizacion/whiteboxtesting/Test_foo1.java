@@ -2,10 +2,14 @@ package es.upm.grise.profundizacion.whiteboxtesting;
 
 import static org.junit.Assert.*;
 
+import org.junit.Ignore;
 import org.junit.Test;
+
+// OSCAR: CC=2, por lo que 2 tests son suficientes
 
 public class Test_foo1 {
 
+	@Ignore
 	@Test
 	public void test_lt5() {
 		Exercises ex= new Exercises();
@@ -24,6 +28,8 @@ public class Test_foo1 {
 		assertEquals((float) 1, ex.foo1(6,16),0);
 	}
 	
+	
+	@Ignore
 	@Test
 	public void test_zero() {
 		Exercises ex= new Exercises();
