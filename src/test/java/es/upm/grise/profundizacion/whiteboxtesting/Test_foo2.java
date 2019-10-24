@@ -2,15 +2,20 @@ package es.upm.grise.profundizacion.whiteboxtesting;
 
 import static org.junit.Assert.*;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
+//OSCAR: CC= 4, por lo que sobra un caso
+
 public class Test_foo2 {
+	@Ignore
     //Prueba a menor que b
 	@Test
 	public void testCasoAMenorB() {
 		Exercises ejemplo = new Exercises();
 		assertEquals(1.5, ejemplo.foo2(0, 3),0);
 	}
+	
 	//Prueba B menor que A
 	@Test
 	public void testCasoBMenorA() {
