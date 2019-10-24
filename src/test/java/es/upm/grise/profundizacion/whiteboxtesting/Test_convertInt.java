@@ -6,6 +6,8 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import org.junit.Before;
 
+//OSCAR: La CC = 7, por lo que harían falta 7 tests. Bien es cierto que se puede conseguir
+// una cobertura del 100% con menos tests.
 
 public class Test_convertInt {
 
