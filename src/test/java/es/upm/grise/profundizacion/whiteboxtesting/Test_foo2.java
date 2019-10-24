@@ -6,6 +6,8 @@ import org.junit.Test;
 
 import junit.framework.TestCase;
 
+// OSCAR: CC = 4. Te sobran muchos casos de prueba, en concreto 4 de ellos: 4, 6, 7 y 8
+
 public class Test_foo2 {
 
 	@Test
@@ -37,15 +39,15 @@ public class Test_foo2 {
 		float result3 = foo2Test.foo2(10.0f, -14.0f);
 		TestCase.assertEquals(-2.0f, result3);
 		float result4 = foo2Test.foo2(3.0f, 2.0f);
-		TestCase.assertEquals(2.0f, result4);
+		//TestCase.assertEquals(2.0f, result4);
 		float result5 = foo2Test.foo2(-15.0f, 14.0f);
 		TestCase.assertEquals(2.0f, result5);
 		float result6 = foo2Test.foo2(11, 12);
-		TestCase.assertEquals(2.0f, result6);
+		//TestCase.assertEquals(2.0f, result6);
 		float result7 = foo2Test.foo2(-11.0f, 115.0f);
-		TestCase.assertEquals(52.0f, result7);
+		//TestCase.assertEquals(52.0f, result7);
 		float result8 = foo2Test.foo2(2.0f, 3.0f);
-		TestCase.assertEquals(2.0f, result8);
+		//TestCase.assertEquals(2.0f, result8);
 		
 		
 		

@@ -6,6 +6,9 @@ import org.junit.Test;
 
 import junit.framework.TestCase;
 
+//OSCAR: CC=2, por lo que hacen falta 2 casos de prueba. En EclEmma se ve perfectamente que falta
+// un camino.
+
 public class Test_foo1 {
 
 	@Test
