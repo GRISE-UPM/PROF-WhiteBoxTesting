@@ -4,9 +4,13 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+import org.junit.Ignore;
 
 import java.security.SecureRandom;
 import java.util.Random;
+
+// OSCAR: La CC = 2, por lo que sólo son necesarios 2 casos de prueba utilizando la técnica de
+// caminos básicos. Esto no quiere decir que se puedan hacer más pruebas, naturalmente.
 
 public class Test_foo1 {
 
@@ -26,6 +30,10 @@ public class Test_foo1 {
 
 	private Exercises exercises = new Exercises();
 
+	//OSCAR: Las excepciones en jUnit se prueban de otra forma pero eso ya lo veremos en una
+	// proxima clase
+	
+	@Ignore
 	@Test
 	public void test_exception_minus_10() {
 		float x = -10.0F;
