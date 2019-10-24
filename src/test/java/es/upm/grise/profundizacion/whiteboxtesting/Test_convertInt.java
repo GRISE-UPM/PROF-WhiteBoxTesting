@@ -9,6 +9,8 @@ public class Test_convertInt {
 	
 	Exercises.convertInt convertInt;
 	
+	// CC = 7
+	
 	@Before
 	public void setUp() {	
 		Exercises exercises = new Exercises();
@@ -17,27 +19,28 @@ public class Test_convertInt {
 	
 	@Test (expected = Exception.class)
 	public void testStrLengthGrT6() throws Exception {
-		convertInt.convert(new char[] {'a','a','a','a','a','a','a'});
+		convertInt.convert(new char[] {'1','1','1','1','1','1','1'});
 	}
 	
 	@Test
-	public void testStrNoMinusSymbol() throws Exception {
-		assertEquals(16247, convertInt.convert(new char[] {'\t','A','A','a'}));
+	public void testStrPossitiveSymbol() throws Exception {
+		assertEquals(539, convertInt.convert(new char[] {'1','1'}));
 	}
+	
 		
 	@Test
-	public void testStrMinusSymbol() throws Exception {
-		assertEquals(-16247, convertInt.convert(new char[] {'-','\t','A','A','a'}));
+	public void testStrNegativeSymbol() throws Exception {
+		assertEquals(-539, convertInt.convert(new char[] {'-','1','1'}));
 	}
 	
 	@Test (expected = Exception.class)
-	public void testNumberOutOfBoundsPossitive() throws Exception {
-		convertInt.convert(new char[] {'0','z','A','a'}); // 60947
+	public void testNumberGraterThanPossitive() throws Exception {
+		convertInt.convert(new char[] {'0','1','1','1'}); // 60947
 	}
 	
 	@Test (expected = Exception.class)
-	public void testNumberOutOfBoundsNegative() throws Exception {
-		convertInt.convert(new char[] {'-','0','z','A','a'}); // - 60947
+	public void testNumberLessThanNegative() throws Exception {
+		convertInt.convert(new char[] {'-','1','1','1','1'}); // - 60947
 	}
 	
 

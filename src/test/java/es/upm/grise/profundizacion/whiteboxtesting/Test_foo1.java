@@ -9,7 +9,9 @@ public class Test_foo1 {
 
 	Exercises exercises;
 	public static final float DELTA =  0.001F;
-
+	
+	//CC = 2
+	
 	@Before
 	public void setUp() {
 		exercises = new Exercises();
