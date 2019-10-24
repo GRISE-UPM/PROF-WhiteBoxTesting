@@ -4,6 +4,12 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+// OSCAR: Es preferible que cada aserción vaya en un @Test separado.
+// El testeo está correcto, aunque es preferible aumentar las ramas una a una, 
+// para poder detectar más fácilmente dónde se ha producido el error, y depurar 
+// más fácilmente. En este caso, CC = 4, por lo que lo ideal sería tener 4 casos de prueba
+
+
 public class Test_foo2 {
 
 	Exercises testFoo2 = new Exercises();
