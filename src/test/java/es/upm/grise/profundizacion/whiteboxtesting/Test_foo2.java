@@ -4,6 +4,10 @@ import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.Ignore;
+
+//OSCAR: En este caso, la CC = 4, por lo que 4 casos de prueba son suficientes para 
+//alcanzar una cobertura del 100%
 
 public class Test_foo2 {
 	
@@ -30,6 +34,7 @@ public class Test_foo2 {
 		assertEquals((3 + 1) / 2f, exercises.foo2(a,b),DELTA);
 	}
 	
+	@Ignore
 	@Test
 	public void testN1F_N2T_N3F() {
 		
@@ -66,6 +71,7 @@ public class Test_foo2 {
 		assertEquals((1+3) / 2f, exercises.foo2(a,b),DELTA);
 	}
 
+	@Ignore
 	@Test
 	public void testN1T_N2T_N3F() {
 		
@@ -75,6 +81,7 @@ public class Test_foo2 {
 		assertEquals((1+3) / 2f, exercises.foo2(a,b),DELTA);
 	}
 	
+	@Ignore
 	@Test
 	public void testN1T_N2F_N3T() {
 		
@@ -84,6 +91,7 @@ public class Test_foo2 {
 		assertEquals((1+3) / 2f, exercises.foo2(a,b),DELTA);
 	}
 	
+	@Ignore
 	@Test
 	public void testN1T_N2F_N3F() {
 		
