@@ -4,6 +4,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+//OSCAR: En este caso, la CC = 4. Ahora bien, como los dos bucles están en secuencia, 
+// podemos evitar un camino introduciendo dos ramas de una vez. El testeo está correcto, 
+// aunque es preferible aumentar las ramas una a una, para poder detectar más fácilmente dónde se ha
+//producido el error, y depurar más fácilmente.
+
 public class Test_foo2 {
 
 	//explicado rapido de cuantos caminos hay (lo he dibujado tambien y

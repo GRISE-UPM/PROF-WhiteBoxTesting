@@ -2,7 +2,13 @@ package es.upm.grise.profundizacion.whiteboxtesting;
 
 import static org.junit.Assert.*;
 
+import org.junit.Ignore;
 import org.junit.Test;
+
+// OSCAR: De nuevo, CC = 4, aunque 3 casos son suficientes. Los 3 casos adicionales son
+// innecesarios, ya que se basan en consideraciones de prueba distintas de los caminos 
+// básicos. Esto no quiere decir que sean inútiles, ya que se pueden probar muchas cosas (por
+// ejemplo, se podrían hacer pruebas funcionales, o de otro tipo).
 
 public class Test_maxAbsolute {
 
@@ -53,6 +59,7 @@ public class Test_maxAbsolute {
 	//(es como la ultima pero con un array) 
 	//y otras 2 en la que son mezcla, en una saldra uno de los positivos y en la 
 	//otra un negativo
+	@Ignore
 	@Test
 	public void arrayPositivo() {
 		Exercises ejercicio = new Exercises();
@@ -61,6 +68,7 @@ public class Test_maxAbsolute {
 		assertEquals(9, ejercicio.maxAbsolute(numbers),0.001);	
 	}
 	
+	@Ignore
 	@Test
 	public void arrayMezclaNeg() {
 		Exercises ejercicio = new Exercises();
@@ -69,6 +77,7 @@ public class Test_maxAbsolute {
 		assertEquals(7, ejercicio.maxAbsolute(numbers),0.001);	
 	}
 	
+	@Ignore
 	@Test
 	public void arrayMezclaPos() {
 		Exercises ejercicio = new Exercises();
