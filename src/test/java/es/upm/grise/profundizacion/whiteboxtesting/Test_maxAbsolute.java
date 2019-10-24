@@ -6,6 +6,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.Test;
 
 public class Test_maxAbsolute {
+	
+	//OSCAR: En este caso, la CC = 4. Ahora bien, la existencia del for permite simplificar el 
+	//número de caminos mediante multiples pasadas por el bucle. El testeo está correcto, aunque 
+	//es preferible aumentar las ramas una a una, para poder detectar más fácilmente dónde se ha
+	//producido el error, y depurar más fácilmente.
 
 	Exercises exercise=new Exercises();
 	

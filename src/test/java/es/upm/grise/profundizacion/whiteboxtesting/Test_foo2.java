@@ -5,6 +5,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
 
+// OSCAR: foo2() tiene CC = 4. Se podría resolver con 3 casos de prueba, pero en tu caso has
+// escogido mal los datos. Te falta una rama del 2o if sin probar.
+
 public class Test_foo2 {
 
 	Exercises exercises=new Exercises();

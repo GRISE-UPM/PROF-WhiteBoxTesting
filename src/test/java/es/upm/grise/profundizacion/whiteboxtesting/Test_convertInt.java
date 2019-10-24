@@ -7,19 +7,22 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
+//OSCAR: La CC = 7, por lo que harían falta 7 tests. Bien es cierto que se puede conseguir
+//una cobertura del 100% con menos tests al incluir más de una rama en cada camino indepen-
+//diente
+
 public class Test_convertInt {
 	
 	Exercises exercises= new Exercises();
 	Exercises.ConvertInt convertClass= exercises.new ConvertInt();
 
-	
+	//OSCAR: A menos que tengas que testear el mensaje, no hace falta complicar la
+	// aserción
 	//Caso 1 str.length>6
 	@Test()
 	public void test_caso1_Convert() throws Exception{
 		char[] str= {'a','b','c','d','e','f','g','h'};
-		Exception excepcion=assertThrows(Exception.class, ()->convertClass.convert(str));
-		assertEquals(null, excepcion.getMessage());
-		
+		assertThrows(Exception.class, ()->convertClass.convert(str));
 	}
 	//Caso 2 str.length<6 str={- w h t l r }
 	@Test()
