@@ -4,6 +4,10 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+//OSCAR: La CC = 7, por lo que harían falta 7 tests. Bien es cierto que se puede conseguir
+//una cobertura del 100% con menos tests al incluir más de una rama en cada camino indepen-
+//diente
+
 public class Test_convertInt {
 	Exercises ej = new Exercises();
 	Exercises.convertInt convInt = ej.new convertInt();
