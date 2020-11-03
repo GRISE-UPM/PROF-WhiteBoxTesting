@@ -1,8 +1,7 @@
 package es.upm.grise.profundizacion.whiteboxtesting;
 
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.Test;
 
 public class Test_convertInt {
 
