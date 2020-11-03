@@ -1,14 +1,22 @@
 package es.upm.grise.profundizacion.whiteboxtesting;
 
 import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
 
 public class Test_maxAbsolute {
-
+	
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void maxAbsolute_gt_5() {
+		int[] arr = {1,2,3,4,5,6,7,8,9};
+		assertEquals(-1, new Exercises().maxAbsolute(arr));
+	}
+	
+	@Test
+	public void maxAbsolute_lt_5() {
+		int[] arr = {-1,2,3};
+		assertEquals(3, new Exercises().maxAbsolute(arr));
 	}
 
 }
