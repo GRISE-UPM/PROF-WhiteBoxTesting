@@ -1,14 +1,12 @@
 package es.upm.grise.profundizacion.whiteboxtesting;
 
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
+import static org.junit.Assert.fail;
 
 public class Test_convertInt {
-
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
-
+    @Test
+    public void test() {
+        fail("Not yet implemented");
+    }
 }
