@@ -21,9 +21,9 @@ public class Test_maxAbsolute {
 	@DisplayName("Test 2 - maxAbsolute")
 	@Test
 	public void test2() {
-		int [] numbers = {1,2,3};
+		int [] numbers = {1,2,4};
 		int res = ex.maxAbsolute(numbers);
-		assertEquals(res, 3);
+		assertEquals(res, 4);
 	}
 	
 	@DisplayName("Test 3 - maxAbsolute")
