@@ -6,14 +6,14 @@ import static org.junit.jupiter.api.Assertions.*;
 public class Test_maxAbsolute {
 	
 	@Test
-	public void maxAbsolute_gt_5() {
+	public void maxAbsolute_len_gt_5() {
 		int[] arr = {1,2,3,4,5,6,7,8,9};
 		assertEquals(-1, new Exercises().maxAbsolute(arr));
 	}
 	
 	@Test
-	public void maxAbsolute_lt_5() {
-		int[] arr = {-1,2,3};
+	public void maxAbsolute_len_lt_5() {
+		int[] arr = {1,2,3};
 		assertEquals(3, new Exercises().maxAbsolute(arr));
 	}
 
