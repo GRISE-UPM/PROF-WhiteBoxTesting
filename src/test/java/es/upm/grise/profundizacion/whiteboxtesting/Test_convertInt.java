@@ -26,35 +26,35 @@ public class Test_convertInt {
 	}
 
 	@Test
-	public void test_1() {
+	public void test_moreThanSix() {
 		char [] str = {'0', '1', '2', '3', '4', '5', '6'};
 		
 		assertThrows(Exception.class, () -> obj.convert(str)); // Rama 1: str > 6 -> Exception
 	}
 	
 	@Test
-	public void test_2() throws Exception {
+	public void test_negativeNumber() throws Exception {
 		char [] str = {'-', '1', '2', '3'};
 		
 		assertEquals(-123, obj.convert(str)); // Rama 2: str[0]=='-'
 	}
 	
 	@Test
-	public void test_3() throws Exception {
+	public void test_positiveNumber() throws Exception {
 		char [] str = {'1', '2', '3', '4'};
 		
 		assertEquals(1234, obj.convert(str)); // Rama 3: str[0] != '-'
 	}
 
 	@Test
-	public void test_4() throws Exception {
+	public void test_numberGreaterThan() throws Exception {
 		char [] str = {'3', '2', '7', '6', '8'};
 		
 		assertThrows(Exception.class, () -> obj.convert(str)); // Rama 4: number > 32767
 	}
 	
 	@Test
-	public void test_5() throws Exception {
+	public void test_numberLessThan() throws Exception {
 		char [] str = {'-', '3', '2', '7', '6', '9'};
 		
 		assertThrows(Exception.class, () -> obj.convert(str)); // Rama 5: number < -32768

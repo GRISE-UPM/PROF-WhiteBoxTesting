@@ -23,13 +23,13 @@ public class Test_foo1 {
 	}
 
 	@Test
-	public void test_1() 
+	public void test_firstIf() 
 	{
 		 assertEquals(1, ex.foo1(6, 16)); // Rama 1, entra en el if
 	}
 	
 	@Test
-	public void test_2() 
+	public void test_jumpIf() 
 	{
 		 assertEquals(2, ex.foo1(5, 10)); // Rama 2, no entra en el if
 	}

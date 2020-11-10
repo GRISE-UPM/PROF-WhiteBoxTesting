@@ -23,21 +23,21 @@ public class Test_maxAbsolute {
 	}
 
 	@Test
-	public void test_1() 
+	public void test_lengthGreaterThanFive() 
 	{
 		int [] numbers = {1, 2, 3, 4, 5, 6};
 		assertEquals(-1, ex.maxAbsolute(numbers)); // Rama 1, numbers.length > 5
 	}
 	
 	@Test
-	public void test_2() 
+	public void test_secondElementLessThanZero() 
 	{
 		int [] numbers = {1, -5, 3, -1};
 		assertEquals(5, ex.maxAbsolute(numbers)); // Rama 2, numbers.length < 5; numbers[1] < 0
 	}
 
 	@Test
-	public void test_3() 
+	public void test_everyElementGreaterThanZero() 
 	{
 		int [] numbers = {1, 2, 3};
 		assertEquals(3, ex.maxAbsolute(numbers)); // Rama 3,  numbers.length < 5; numbers[i] > 0

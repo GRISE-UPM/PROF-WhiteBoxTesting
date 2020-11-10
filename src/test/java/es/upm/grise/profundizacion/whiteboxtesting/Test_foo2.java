@@ -23,25 +23,25 @@ public class Test_foo2 {
 	}
 
 	@Test
-	public void test_1() 
+	public void test_aGreaterThanb() 
 	{
 		 assertEquals(2, ex.foo2(4, 2)); // Rama 1, a > b;  cos(a) < 0;
 	}
 	
 	@Test
-	public void test_2() 
+	public void test_aLessThanb() 
 	{
 		 assertEquals(2, ex.foo2(100, 270)); // Rama 2,  a < b;  cos(b) > 0;
 	}
 
 	@Test
-	public void test_3() 
+	public void test_aEqualsb() 
 	{
 		 assertEquals(2, ex.foo2(180, 180)); // Rama 3, a == b;  cos(a) < 0;
 	}
 
 	@Test
-	public void test_4() 
+	public void test_posACosandNegBCos() 
 	{
 		 assertEquals(90, ex.foo2(0, 180)); // Rama 4, a < b;  cos(a) > 0; cos(b) < 0
 	}
