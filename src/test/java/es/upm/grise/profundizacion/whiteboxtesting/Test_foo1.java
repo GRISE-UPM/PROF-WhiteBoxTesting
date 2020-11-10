@@ -11,6 +11,7 @@ public class Test_foo1 {
 
 	@Test
 	public void testXgt5() {
+		
 		Exercises ex = new Exercises();
 		float x = 6;
 		float y = 16;
@@ -19,6 +20,7 @@ public class Test_foo1 {
 	
 	@Test
 	public void testXle5() {
+
 		Exercises ex = new Exercises();
 		float x = 5;
 		float y = 10;
