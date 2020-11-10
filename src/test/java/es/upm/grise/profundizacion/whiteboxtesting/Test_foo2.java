@@ -14,6 +14,7 @@ public class Test_foo2 {
 
 	@Test
 	public void testagtbsinif() {
+		
 		Exercises ex = new Exercises();
 		float a = 90;
 		float b = -90;
@@ -31,6 +32,7 @@ public class Test_foo2 {
 	
 	@Test
 	public void testagtbconif() {
+		
 		Exercises ex = new Exercises();
 		float a = 0;
 		float b = -180;
@@ -48,6 +50,7 @@ public class Test_foo2 {
 	
 	@Test
 	public void testalebsinif() {
+		
 		Exercises ex = new Exercises();
 		float a = 90;
 		float b = 180;
