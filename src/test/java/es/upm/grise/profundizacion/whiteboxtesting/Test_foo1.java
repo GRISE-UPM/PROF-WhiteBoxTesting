@@ -14,6 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class Test_foo1 {
 
+	//Estos metodos corresponden a la prueba del metodo foo1
 	private Exercises exercise = new Exercises();
 	
 	@Test

@@ -18,6 +18,8 @@ import es.upm.grise.profundizacion.whiteboxtesting.Exercises.convertInt;
 
 public class Test_convertInt {
 	
+	//Estos metodos corresponden a la prueba del metodo convertInt
+	
 	private Exercises exercise = new Exercises();
 	private convertInt convert = exercise.new convertInt();
 	

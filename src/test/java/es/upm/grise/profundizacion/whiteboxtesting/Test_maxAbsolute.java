@@ -13,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class Test_maxAbsolute {
 
+	//Estos metodos corresponden a la prueba del metodo maxAbsolute
 	private Exercises exercise = new Exercises();
 	
 	@Test

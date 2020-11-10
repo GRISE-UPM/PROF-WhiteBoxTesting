@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class Test_foo2 {
 
-
+	//Estos metodos corresponden a la prueba del metodo foo2
 	private Exercises exercise = new Exercises();
 	
 	@Test
