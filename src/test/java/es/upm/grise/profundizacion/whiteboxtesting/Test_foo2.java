@@ -22,7 +22,7 @@ public class Test_foo2 {
 
 	@Test
 	@DisplayName("Test with both angles as NaN that should return NaN")
-	void resNaN_BothNaNDegree() {
+	void shouldReturnNaNBecauseBothAnglesAreNaN() {
 		float b = (float) Math.toRadians(Float.NaN);
 		float a = (float) Math.toRadians(Float.NaN);
 
@@ -31,7 +31,7 @@ public class Test_foo2 {
 
 	@Test
 	@DisplayName("Test with the first angle as NaN that should return NaN")
-	void resNaN_FirstDegreeIsNaN() {
+	void shouldReturnNaNBecauseTheFirstAngleIsNaN() {
 		float b = (float) Math.toRadians(Float.NaN);
 		float a = (float) Math.toRadians(90);
 
@@ -40,7 +40,7 @@ public class Test_foo2 {
 
 	@Test
 	@DisplayName("Test with the second angle as NaN that should return 2")
-	void resTwo_FirstDegreeIsNaN() {
+	void shouldReturnTwoWithSecondAngleAsNaN() {
 		float b = (float) Math.toRadians(90);
 		float a = (float) Math.toRadians(Float.NaN);
 
@@ -49,7 +49,7 @@ public class Test_foo2 {
 
 	@Test
 	@DisplayName("Test with angles as positive and negative infinities that should return NaN")
-	void resNaN_PosAndNegInfinityEachDegree() {
+	void shhouldReturnNaNBecauseAnglesAreNegAndPosInfinity() {
 		float b = (float) Math.toRadians(Float.POSITIVE_INFINITY);
 		float a = (float) Math.toRadians(Float.NEGATIVE_INFINITY);
 
@@ -58,7 +58,7 @@ public class Test_foo2 {
 
 	@Test
 	@DisplayName("Test with both angles as negative infinity that should return a negative infinity")
-	void resMinusInfinity_NegInfinityEachDegree() {
+	void shouldReturnNegInfinityBecauseBothAnglesAreNegInfinity() {
 		float b = (float) Math.toRadians(Float.NEGATIVE_INFINITY);
 		float a = (float) Math.toRadians(Float.NEGATIVE_INFINITY);
 
@@ -66,8 +66,8 @@ public class Test_foo2 {
 	}
 
 	@Test
-	@DisplayName("Test with two 90 degree angles that should result on 0, but it doesn't due to lack of precision")
-	void nearZeroCos_90Degrees() {
+	@DisplayName("Test with two 90 degree angles that should result on 0, but it doesn't due to lack of precision os PI/2 radians.")
+	void shouldReturnCorrectResultWithNinetyDegreeAngles() {
 		float a = (float) Math.toRadians(90);
 		float b = (float) Math.toRadians(90);
 
@@ -76,7 +76,7 @@ public class Test_foo2 {
 
 	@Test
 	@DisplayName("Test with two 0 degree anges that should return 2.0")
-	void resEqTwo_0Degrees(){
+	void shouldReturnTwoBecauseBothAnglesAreZero() {
 		float a = (float) Math.toRadians(0);
 		float b = (float) Math.toRadians(0);
 
@@ -85,7 +85,7 @@ public class Test_foo2 {
 
 	@Test
 	@DisplayName("Test with to angles with a positive and negative cos, that should return 1.57...")
-	void twoAngles_PosAndNegCos() {
+	void shouldReturnCorrectResultWith45And135DegreeAngles() {
 		float a = (float) Math.toRadians(45);
 		float b = (float) Math.toRadians(135);
 
