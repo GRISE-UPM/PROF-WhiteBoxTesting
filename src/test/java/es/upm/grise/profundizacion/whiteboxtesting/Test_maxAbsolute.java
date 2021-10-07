@@ -19,27 +19,27 @@ public class Test_maxAbsolute {
 
 	@Test
 	@DisplayName("Test with an array of more that 5 elements that should return -1")
-	void arrayOfLessThanFiveElements() {
+	void shouldReturnNegOneBecauseArrayIsTooLong() {
 		assertEquals(-1, exercises.maxAbsolute(new int[6]), 0);
 	}
 
 	@Test
 	@DisplayName("Test with an array of zeroes that should return 0")
-	void maxOfArrayWithAllZeroes() {
+	void shouldReturnZeroBecauseArrayOfZeroes() {
 		int[] numbers = {0, 0, 0, 0};
 		assertEquals(0, exercises.maxAbsolute(numbers), 0);
 	}
 
 	@Test
 	@DisplayName("Test with an array of negative numbers that should return 3")
-	void maxOfArrayWithAllNegativeIntegers() {
+	void shouldReturnCorrectValueForArrayOfNegNumbers() {
 		int[] numbers = {-2, -1, -3};
 		assertEquals(3, exercises.maxAbsolute(numbers), 0);
 	}
 
 	@Test
 	@DisplayName("Test with an array of positive and negative numbers that should return 4")
-	void maxOfArrayWithNegAndPosNumbers() {
+	void shouldReturnCorrectValueForArrayOfPosAndNegNumbers() {
 		int[] numbers = {-3, -1, 4};
 		assertEquals(3, exercises.maxAbsolute(numbers), 0);
 	}
