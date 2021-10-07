@@ -19,31 +19,31 @@ public class Test_foo1 {
 
 	@Test
 	@DisplayName("Test that passes two 0's ans expects a NaN")
-	void resEqNan() {
+	void shouldReturnNaNBecauseBothNumbersAreZero() {
 		assertEquals(Float.NaN, exercises.foo1(0f, 0f), 0.01);
 	}
 
 	@Test
 	@DisplayName("Test that passes 1 and 0 and expects a 0")
-	void resEqZero() {
+	void shouldReturnZeroBecauseFirstNumberIsZero() {
 		assertEquals(0f, exercises.foo1(1f, 0f), 0.01);
 	}
 
 	@Test
 	@DisplayName("Test that passes two 5's and expects a 1")
-	void resEqOne() {
+	void shouldReturnOneBecauseBothNumbersBelowFiveAndEqual() {
 		assertEquals(1f, exercises.foo1(5f, 5f), 0.01);
 	}
 
 	@Test
 	@DisplayName("Test that passes 10 and 20 and expects a 10")
-	void resEsTen() {
+	void shouldReturnTen() {
 		assertEquals(10f, exercises.foo1(10f, 20f), 0.01);
 	}
 
 	@Test
 	@DisplayName("Test that passes 990 and 10 and expects a 100")
-	void resEqOneHundred() {
+	void shouldReturnOneHundred() {
 		assertEquals(100f, exercises.foo1(990f, 10f), 0.01);
 	}
 
