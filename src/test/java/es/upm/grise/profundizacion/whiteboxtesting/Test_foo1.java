@@ -9,46 +9,43 @@ import org.junit.jupiter.api.DisplayName;
 
 public class Test_foo1 {
 
-	private static Exercises exercises;
-
 	@BeforeAll
-	void setUp() {
+	public void setUp() {
 		System.out.println("Setting up foo1 test...");
-		exercises = new Exercises();
 	}
 
 	@Test
 	@DisplayName("Test that passes two 0's ans expects a NaN")
-	void shouldReturnNaNBecauseBothNumbersAreZero() {
-		assertEquals(Float.NaN, exercises.foo1(0f, 0f), 0.01);
+	public void shouldReturnNaNBecauseBothNumbersAreZero() {
+		assertEquals(Float.NaN, (new Exercises()).foo1(0f, 0f), 0.01);
 	}
 
 	@Test
 	@DisplayName("Test that passes 1 and 0 and expects a 0")
-	void shouldReturnZeroBecauseFirstNumberIsZero() {
-		assertEquals(0f, exercises.foo1(1f, 0f), 0.01);
+	public void shouldReturnZeroBecauseFirstNumberIsZero() {
+		assertEquals(0f, (new Exercises()).foo1(1f, 0f), 0.01);
 	}
 
 	@Test
 	@DisplayName("Test that passes two 5's and expects a 1")
-	void shouldReturnOneBecauseBothNumbersBelowFiveAndEqual() {
-		assertEquals(1f, exercises.foo1(5f, 5f), 0.01);
+	public void shouldReturnOneBecauseBothNumbersBelowFiveAndEqual() {
+		assertEquals(1f, (new Exercises()).foo1(5f, 5f), 0.01);
 	}
 
 	@Test
-	@DisplayName("Test that passes 10 and 20 and expects a 10")
-	void shouldReturnTen() {
-		assertEquals(10f, exercises.foo1(10f, 20f), 0.01);
+	@DisplayName("Test that passes 30 and 50 and expects a 1.25")
+	public void shouldReturnZeroPointFive() {
+		assertEquals(0.5f, (new Exercises()).foo1(90f, 50f), 0.01);
 	}
 
 	@Test
 	@DisplayName("Test that passes 990 and 10 and expects a 100")
-	void shouldReturnOneHundred() {
-		assertEquals(100f, exercises.foo1(990f, 10f), 0.01);
+	public void shouldReturnOneThird() {
+		assertEquals(0.333f, (new Exercises()).foo1(140f, 50f), 0.001);
 	}
 
 	@AfterAll
-	void tearDown() {
+	public void tearDown() {
 		System.out.println("foo1 tests done.");
 	}
 }
