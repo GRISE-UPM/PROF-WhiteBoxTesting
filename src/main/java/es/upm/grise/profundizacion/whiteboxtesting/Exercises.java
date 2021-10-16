@@ -2,14 +2,14 @@ package es.upm.grise.profundizacion.whiteboxtesting;
 
 public class Exercises {
 
-	public float foo1(float x, float y) {     
+	public static float foo1(float x, float y) {     
 		if (x > 5)    
 			x += 10;
 		y = y / x;   
 		return y; 
 	} 
 
-	public float foo2(float a, float b) {    
+	public static float foo2(float a, float b) {    
 		if (a > b) {
 			float tmp;
 			tmp = b;
@@ -23,7 +23,7 @@ public class Exercises {
 	}
 
 
-	public int maxAbsolute(int[] numbers){
+	public static int maxAbsolute(int[] numbers){
 		if(numbers.length > 5)
 			return -1;
 		int max_value = 0;
@@ -35,8 +35,8 @@ public class Exercises {
 		return max_value;
 	}
 
-	public class convertInt {
-		public int convert(char[] str) throws Exception{
+	public static class convertInt {
+		public static int convert(char[] str) throws Exception{
 			if (str.length > 6) 
 				throw new Exception(); 
 			int number=0;int digit; int i=0;
