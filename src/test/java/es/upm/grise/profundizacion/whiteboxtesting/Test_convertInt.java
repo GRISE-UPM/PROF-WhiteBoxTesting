@@ -7,8 +7,11 @@ import org.junit.Test;
 public class Test_convertInt {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void test() throws Exception {
+		Exercises excercise = new Exercises();
+		Exercises.convertInt converInt = excercise.new convertInt();
+		String textoT = "10345";
+		assertEquals(10345, converInt.convert(textoT.toCharArray()));
 	}
 
 }

@@ -8,7 +8,11 @@ public class Test_foo2 {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		Exercises excercise = new Exercises();
+		float result = excercise.foo2(10.0f,10.0f);
+		System.out.println(result);
+
+		assertEquals(2.0f, excercise.foo2(10.0f,10.0f), 0);
 	}
 
 }
