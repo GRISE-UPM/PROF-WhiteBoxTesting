@@ -2,17 +2,17 @@ package es.upm.grise.profundizacion.whiteboxtesting;
 
 import static org.junit.Assert.*;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.*;
 
 public class Test_convertInt {
 
-	Exercises exercises;
-	Exercises.convertInt convertInt;
+	private Exercises exercises;
+	private Exercises.convertInt convertInt;
 
 
-	@Before
+	@BeforeEach
 	public void beforeEach() {
 		this.exercises = new Exercises();
 		this.convertInt = this.exercises.new convertInt();

@@ -2,15 +2,15 @@ package es.upm.grise.profundizacion.whiteboxtesting;
 
 import static org.junit.Assert.*;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
 
 public class Test_maxAbsolute {
 
-	Exercises exercises;
+	private Exercises exercises;
 
-	@Before
+	@BeforeEach
 	public void beforeEach() {
 		this.exercises = new Exercises();
 	}
