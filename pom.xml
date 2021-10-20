@@ -21,11 +21,17 @@
 	<dependencies>
 		<!--  Test runner for jUnit 4 tests, and test suites -->
 		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<version>5.8.1</version>
+		</dependency>
+		<dependency>
 			<groupId>org.junit.platform</groupId>
 			<artifactId>junit-platform-runner</artifactId>
 			<version>${junit-platform.version}</version>
 			<scope>test</scope>
 		</dependency>
+
 
 		<!--  Test runner for jUnit 5 -->
 		<dependency>
@@ -34,14 +40,13 @@
 			<version>${junit-jupiter.version}</version>
 			<scope>test</scope>
 		</dependency>
-
-		<!--  The API where annotations, e.g., @Test, are defined -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-api</artifactId>
-			<version>${junit-jupiter.version}</version>
-			<scope>test</scope>
+			<version>5.8.1</version>
 		</dependency>
+
+
 	</dependencies>
 
 	<build>
