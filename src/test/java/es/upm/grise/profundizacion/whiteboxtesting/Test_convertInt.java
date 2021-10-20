@@ -7,8 +7,15 @@ import org.junit.Test;
 public class Test_convertInt {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void test() throws Exception {
+		Exercises.convertInt ej = new Exercises.convertInt();
+		char [] chain1 = {'h','o'};
+		assertEquals(ej.convert(chain1),623, 0);
+
+		char [] chain2 = {'-','o'};
+		assertEquals(ej.convert(chain2), -63, -0);
 	}
+
+
 
 }

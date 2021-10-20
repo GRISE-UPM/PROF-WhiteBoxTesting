@@ -8,7 +8,14 @@ public class Test_foo2 {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		Exercises ej2 = new Exercises();
+		float a1 = 1;
+		float b1 = 0;
+		assertEquals(ej2.foo2(a1,b1), 2,0);
+		float a2 = 3;
+		float b2 = 4;
+		assertEquals(ej2.foo2(a1,b1), 2,0);
+		assertNotEquals(3,ej2.foo2(a2,b2));
 	}
 
 }
