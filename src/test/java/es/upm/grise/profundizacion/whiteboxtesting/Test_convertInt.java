@@ -17,7 +17,7 @@ public class Test_convertInt {
 	@Test
 	@DisplayName("Test that passes an array that's too long and expects an Exception")
 	public void shouldThrowExceptionBecauseStringTooLong() {
-		char[] str = { '1', '2', '3', '4', '5', '6' };
+		char[] str = { '1', '2', '3', '4', '5', '6' , '7'};
 
 		assertThrows(Exception.class, () -> {
 			(new Exercises()).new convertInt().convert(str);
