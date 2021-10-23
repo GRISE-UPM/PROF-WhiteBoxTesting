@@ -2,7 +2,7 @@ package es.upm.grise.profundizacion.whiteboxtesting;
 
 import static org.junit.Assert.*;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.DisplayName;
@@ -10,7 +10,7 @@ import org.junit.jupiter.api.DisplayName;
 public class Test_foo1 {
 
 	@BeforeAll
-	public void setUp() {
+	public static void setUp() {
 		System.out.println("Setting up foo1 test...");
 	}
 
@@ -45,7 +45,7 @@ public class Test_foo1 {
 	}
 
 	@AfterAll
-	public void tearDown() {
+	public static void tearDown() {
 		System.out.println("foo1 tests done.");
 	}
 }
