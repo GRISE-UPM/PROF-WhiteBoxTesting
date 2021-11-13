@@ -15,11 +15,6 @@ public class Test_foo2 {
 	}
 
 	@Test
-	public void testAisEqualToB() {
-		assertEquals(2, exercises.foo2(5, 5), EPSILON);
-	}
-
-	@Test
 	public void testAisLessThanB() {
 		assertEquals(2, exercises.foo2(4, 5), EPSILON);
 	}
