@@ -33,15 +33,21 @@ public class Test_maxAbsolute {
 
 
 	@Test
-	public void maxAbsolute_lengthSuperior() {
+	public void maxAbsolute_returnMinusOne() {
 		int [] lista =  {1,2,3,4,5,10}; 
 		assertEquals(-1,Exercises.maxAbsolute(lista));
 		
 	}
 	@Test
-	public void maxAbsolute_returnMinusOne() {
+	public void maxAbsolute_return3() {
 		int [] lista =  {1,2,3}; 
 		assertEquals(3,Exercises.maxAbsolute(lista));
+		
+	}
+	@Test
+	public void maxAbsolute_return4() {
+		int [] lista =  {1,2,3,-4}; 
+		assertEquals(4,Exercises.maxAbsolute(lista));
 		
 	}
 
