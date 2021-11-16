@@ -39,13 +39,33 @@ public class Test_convertInt {
 		
 	}
 	@Test
-	public void return_conversion() throws Exception {
+	public void return_5451() throws Exception {
 		char [] c = {'a','b','c'};
 		
 		assertEquals(5451,Exercises.convertInt.convert(c));
 		
 	}
-
+	@Test
+	public void exception_number() throws Exception {
+		char [] c = {'a','b','c','-'};
+		assertThrows(Exception.class, () ->  Exercises.convertInt.convert(c));
+		
+	}
+	@Test
+	public void return_487() throws Exception {
+		char [] c = {'a','-'};
+		assertEquals(487,Exercises.convertInt.convert(c));
+		
+	}
+	
+	@Test
+	public void return_number() throws Exception {
+		char [] c = {'-','a'};
+		assertEquals(-49,Exercises.convertInt.convert(c));
+		
+	}
+	
+	
 	
 
 }
