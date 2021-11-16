@@ -35,6 +35,7 @@ public class Test_foo1 {
 		System.out.println("Executed after each test");
 	}
 	
+	//Los test de foo1 ya cumplen la metodologia white-box (con respecto a tarea 4)
 	
 	@Test
 	public void values_1_1_return1() {
