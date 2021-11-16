@@ -39,8 +39,22 @@ public class Test_foo2 {
 	
 	@DisplayName("The function always returns a 2")
 	@Test
-	public void values_2_2_returns2() {
+	public void values_10_minus10_returns2() {
 		assertEquals(2.0f,Exercises.foo2(10.0f,-10.0f),0.0f);
+	}
+	
+	@Test
+	public void values_100_10_returns2() {
+		assertEquals(2.0f,Exercises.foo2(100.0f,10.0f),0.0f);
+	}
+	
+	@Test
+	public void values_10_100_returns2() {
+		assertEquals(2.0f,Exercises.foo2(10.0f,100.0f),0.0f);
+	}
+	@Test
+	public void values_100_100_returns2() {
+		assertEquals(2.0f,Exercises.foo2(100.0f,100.0f),0.0f);
 	}
 
 
