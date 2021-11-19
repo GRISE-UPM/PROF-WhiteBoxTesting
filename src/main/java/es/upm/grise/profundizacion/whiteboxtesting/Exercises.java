@@ -38,10 +38,12 @@ public class Exercises {
 	public class convertInt {
 		public int convert(char[] str) throws Exception{
 			if (str.length > 6) 
-				throw new Exception(); 
+				throw new Exception();
+
 			int number=0;int digit; int i=0;
 			if (str[0]=='-') 
 				i=1;
+
 			for(; i<str.length; i++){
 				digit = str[i] - '0';
 				number = number * 10 + digit;
@@ -50,6 +52,7 @@ public class Exercises {
 				number =  -number;
 			if (number > 32767 || number < -32768) 
 				throw new Exception();
+
 			return number;
 		}
 	}

@@ -22,8 +22,7 @@
 		<!--  Test runner for jUnit 4 tests, and test suites -->
 		<dependency>
 			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-runner</artifactId>
-			<version>${junit-platform.version}</version>
+			<artifactId>junit-platform-runner</artifactId><version>${junit-platform.version}</version>
 			<scope>test</scope>
 		</dependency>
 
