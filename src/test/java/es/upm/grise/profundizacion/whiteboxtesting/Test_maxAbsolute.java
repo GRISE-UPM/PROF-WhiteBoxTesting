@@ -24,4 +24,22 @@ public class Test_maxAbsolute {
 
 		assertEquals(expectedResult, exercises.maxAbsolute(x));
 	}
+
+	@DisplayName("More than 5 values")
+	@Test()
+	public void more_than_5_values() {
+		int[] x = new int[]{ 1,10,3,4,10,6 };
+		int expectedResult = -1;
+
+		assertEquals(expectedResult, exercises.maxAbsolute(x));
+	}
+
+	@DisplayName("One negative value")
+	@Test()
+	public void one_negative_value() {
+		int[] x = new int[]{ 1,-10,3,4,9 };
+		int expectedResult = 10;
+
+		assertEquals(expectedResult, exercises.maxAbsolute(x));
+	}
 }

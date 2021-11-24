@@ -37,4 +37,17 @@ public class Test_convertInt {
 
 		assertEquals(-12, this.convertInt.convert(string.toCharArray()));
 	}
+
+
+	@DisplayName("The length of string is greater than 6")
+	@Test()
+	public void length_greater_than_6() throws Exception {
+		String string = "1234567";
+
+		Exception exception = assertThrows(Exception.class, () -> {
+			convertInt.convert(string.toCharArray());
+		});
+
+		assertNotNull(exception);
+	}
 }
