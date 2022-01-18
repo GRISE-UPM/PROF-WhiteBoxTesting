@@ -57,6 +57,14 @@ public class Test_convertInt {
 		assertThrows(Exception.class,() -> c.convert(JavaCharArray));
 	}
 
+	@DisplayName("Test 6 -> Input array is letters instead of numbers")
+	@Test
+	public void convertIntLetters() throws Exception {
+		char[] JavaCharArray = {'a','b', 'c', 'd', 'e', 'f'};
+		c = new Exercises().new convertInt();
+		assertThrows(Exception.class,() -> c.convert(JavaCharArray));
+	}
+
 	@AfterEach
 	public void tearDown(TestInfo testInfo) {
 		System.out.println("Finished..." + testInfo.getDisplayName());
