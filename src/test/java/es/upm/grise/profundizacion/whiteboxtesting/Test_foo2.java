@@ -1,6 +1,6 @@
 package es.upm.grise.profundizacion.whiteboxtesting;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
@@ -11,9 +11,11 @@ import org.junit.jupiter.api.AfterEach;
 
 public class Test_foo2 {
 
+	private Exercises exercises = new Exercises();
+	
 	@BeforeAll
 	static public void beforeAll() {
-		System.out.println("Comienzan tests de foo2");
+		System.out.println("Empiezan tests de foo2");
 	}
 	
 	@BeforeEach
@@ -22,30 +24,21 @@ public class Test_foo2 {
 	}
 	
 	@Test
-	@DisplayName("a > b, se cumple la segunda condicion")
-	public void foo2_BiggerTest() {
-		Exercises exercises = new Exercises();
-		int a = 20;
-		int b = 9;
-		assertEquals(2, exercises.foo2(a, b));
+	@DisplayName("a > b, condicion de if")
+	public void foo2_testcase1() {
+		assertEquals(2, exercises.foo2(12, 5), 0.0);
 	}
 	
 	@Test
-	@DisplayName(" a < b, se cumple la segunda condicion")
-	public void foo2_SmallerCosTest() {
-		Exercises exercises = new Exercises();
-		int a = 2;
-		int b = 8;
-		assertEquals(2, exercises.foo2(a, b));
+	@DisplayName(" a < b, condicion de else")
+	public void foo2_testcase2() {
+		assertEquals(2, exercises.foo2(3, 14), 0.0);
 	}
 
 	@Test
 	@DisplayName("a < b, no se cumple la segunda condicion")
-	public void foo2_SmallerTest() {
-		Exercises exercises = new Exercises();
-		int a = 20;
-		int b = 22;
-		assertEquals(21, exercises.foo2(a, b));
+	public void foo2_testcase3() {
+		assertEquals(1.5, exercises.foo2(2, 1), 0.0);
 	}
 	
 	@AfterEach
@@ -55,7 +48,7 @@ public class Test_foo2 {
 	
 	@AfterAll
 	static public void afterAll() {
-		System.out.println("foo2 test terminados");
+		System.out.println("Terminan tests de foo2");
 	}
 
 }

@@ -1,6 +1,7 @@
 package es.upm.grise.profundizacion.whiteboxtesting;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
@@ -12,6 +13,9 @@ import org.junit.jupiter.api.AfterEach;
 
 public class Test_convertInt {
 
+	private Exercises exercises = new Exercises();
+	private Exercises.convertInt convertInt = exercises.new convertInt();
+	
 	@BeforeAll
 	static public void beforeAll() {
 		System.out.println("Comienzan tests de ConvertInt");
@@ -23,46 +27,38 @@ public class Test_convertInt {
 	}
 	
 	@Test
-	@DisplayName("String demasiado largo, más de 6 char")
+	@DisplayName("String demasiado largo - supera 6 char")
 	public void convert_LengthTest() throws Exception {
-		Exercises exercises = new Exercises();
-		Exercises.convertInt convertInt = exercises.new convertInt();
-		
 		char[] a = {'0','1','2','3','4','5','6'};
-		
-		assertThrows(Exception.class, () -> convertInt.convert(a) );
+		assertThrows(Exception.class, ()->convertInt.convert(a));
 	}
 	
 	@Test
-	@DisplayName("String de char se convierte en numero entero positivo")
+	@DisplayName("String de char - numero entero positivo")
 	public void convert_positiveTest() throws Exception {
-		Exercises exercises = new Exercises();
-		Exercises.convertInt convertInt = exercises.new convertInt();
-		
 		char [] a = {'2','7','9'};
-
 		assertEquals(279, convertInt.convert(a));
 	}
 	
 	@Test
-	@DisplayName("String de char se convierte a numero entero negativo")
+	@DisplayName("String de char - numero entero negativo")
 	public void convert_negativeTest() throws Exception {
-		Exercises exercises = new Exercises();
-		Exercises.convertInt convertInt = exercises.new convertInt();
-	
 		char [] a = {'-','7','9'};
-		
 		assertEquals(-79, convertInt.convert(a));
 	}
 	
 	@Test
-	@DisplayName("El numero es mayor que 32767 y lanza excepcion")
-	public void convert_maxTest() throws Exception{
-		Exercises exercises = new Exercises();
-		Exercises.convertInt convertInt = exercises.new convertInt();
+	@DisplayName("El numero positivo pasa limite 32767 - lanza excepcion")
+	public void convert_tooBigPositiveTest() throws Exception{
 		char [] a = {'4','0','0', '0', '0'};
-		
-		assertThrows(Exception.class, () -> convertInt.convert(a) );
+		assertThrows(Exception.class, ()->convertInt.convert(a));
+	}
+	
+	@Test
+	@DisplayName("El numero negativo supera limite - lanza excepcion")
+	public void convert_tooBigNegativeTest() throws Exception{
+		char [] a = {'-','4','0','0', '0', '0'};
+		assertThrows(Exception.class, ()->convertInt.convert(a));
 	}
 	
 	@AfterEach
@@ -76,3 +72,4 @@ public class Test_convertInt {
 	}
 	
 }
+

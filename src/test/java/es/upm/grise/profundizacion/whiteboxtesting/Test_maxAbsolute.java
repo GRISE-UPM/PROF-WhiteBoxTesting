@@ -11,6 +11,8 @@ import org.junit.jupiter.api.AfterEach;
 
 public class Test_maxAbsolute {
 
+	private Exercises exercises = new Exercises();
+	
 	@BeforeAll
 	static public void beforeAll() {
 		System.out.println("Comienzan tests de maxAbsolute");
@@ -23,27 +25,31 @@ public class Test_maxAbsolute {
 	
 	
 	@Test
-	@DisplayName("String de longitud mayor que 5")
+	@DisplayName("Mas de 5 valores")
 	public void maxAbsolute_LengthTest() {
-		Exercises exercises = new Exercises();
-		int [] a = new int[6];
-		assertEquals(-1, exercises.maxAbsolute(a));		
+		int [] a = new int[] {1,2,3,4,5,6,7,8};
+		assertEquals(-1, exercises.maxAbsolute(a), 0.0);		
 	}
 	
 	@Test
 	@DisplayName("Max es positivo")
 	public void maxAbsolute_PositiveTest () {
-		Exercises exercises = new Exercises();
 		int [] a = {23, -21, 24, -20, 28};
-		assertEquals(28, exercises.maxAbsolute(a));		
+		assertEquals(28, exercises.maxAbsolute(a), 0.0);		
 	}
 	
 	@Test
 	@DisplayName("Max es negativo")
 	public void maxAbsolute_NegativeTest () {
-		Exercises exercises = new Exercises();
 		int [] a = {23, -21, 24, -30, 28};
-		assertEquals(30, exercises.maxAbsolute(a));		
+		assertEquals(30, exercises.maxAbsolute(a), 0.0);		
+	}
+	
+	@Test
+	@DisplayName("Valores max iguales")
+	public void maxAbsolute_IgualesMaximosTest () {
+		int [] a = {3, -2, 5, 5};
+		assertEquals(5, exercises.maxAbsolute(a), 0.0);		
 	}
 	
 	
