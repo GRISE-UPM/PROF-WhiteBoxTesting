@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b57616e1-10cc-4967-8418-b7506322f88a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/es/upm/grise/profundizacion/whiteboxtesting/Exercises$convertInt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/es/upm/grise/profundizacion/whiteboxtesting/Exercises.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/es/upm/grise/profundizacion/whiteboxtesting/Test_convertInt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/es/upm/grise/profundizacion/whiteboxtesting/Test_foo1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/es/upm/grise/profundizacion/whiteboxtesting/Test_foo2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/es/upm/grise/profundizacion/whiteboxtesting/Test_maxAbsolute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/upm/grise/profundizacion/whiteboxtesting/Exercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/upm/grise/profundizacion/whiteboxtesting/Exercises.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/es/upm/grise/profundizacion/whiteboxtesting/Test_convertInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/upm/grise/profundizacion/whiteboxtesting/Test_convertInt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/es/upm/grise/profundizacion/whiteboxtesting/Test_foo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/upm/grise/profundizacion/whiteboxtesting/Test_foo1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/es/upm/grise/profundizacion/whiteboxtesting/Test_foo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/upm/grise/profundizacion/whiteboxtesting/Test_foo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/upm/grise/profundizacion/whiteboxtesting/Test_maxAbsolute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/upm/grise/profundizacion/whiteboxtesting/Test_maxAbsolute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/upm/grise/profundizacion/whiteboxtesting/Exercises$convertInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/upm/grise/profundizacion/whiteboxtesting/Exercises$convertInt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/upm/grise/profundizacion/whiteboxtesting/Exercises.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/upm/grise/profundizacion/whiteboxtesting/Exercises.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/es/upm/grise/profundizacion/whiteboxtesting/Test_convertInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/es/upm/grise/profundizacion/whiteboxtesting/Test_convertInt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/es/upm/grise/profundizacion/whiteboxtesting/Test_foo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/es/upm/grise/profundizacion/whiteboxtesting/Test_foo1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/es/upm/grise/profundizacion/whiteboxtesting/Test_foo2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/es/upm/grise/profundizacion/whiteboxtesting/Test_foo2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/es/upm/grise/profundizacion/whiteboxtesting/Test_maxAbsolute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/es/upm/grise/profundizacion/whiteboxtesting/Test_maxAbsolute.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +34,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.Test_convertInt">
+  <component name="RunManager" selected="JUnit.Test_maxAbsolute">
     <configuration name="Test_convertInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="whiteboxtesting" />
       <extension name="coverage">
@@ -55,8 +58,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test_foo1.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="whiteboxtesting" />
+    <configuration name="Test_foo1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PROF-WhiteBoxTesting" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="es.upm.grise.profundizacion.whiteboxtesting.*" />
@@ -65,16 +68,64 @@
       </extension>
       <option name="PACKAGE_NAME" value="es.upm.grise.profundizacion.whiteboxtesting" />
       <option name="MAIN_CLASS_NAME" value="es.upm.grise.profundizacion.whiteboxtesting.Test_foo1" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_foo2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PROF-WhiteBoxTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.upm.grise.profundizacion.whiteboxtesting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.upm.grise.profundizacion.whiteboxtesting" />
+      <option name="MAIN_CLASS_NAME" value="es.upm.grise.profundizacion.whiteboxtesting.Test_foo2" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_foo2.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PROF-WhiteBoxTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.upm.grise.profundizacion.whiteboxtesting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.upm.grise.profundizacion.whiteboxtesting" />
+      <option name="MAIN_CLASS_NAME" value="es.upm.grise.profundizacion.whiteboxtesting.Test_foo2" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_maxAbsolute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PROF-WhiteBoxTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.upm.grise.profundizacion.whiteboxtesting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.upm.grise.profundizacion.whiteboxtesting" />
+      <option name="MAIN_CLASS_NAME" value="es.upm.grise.profundizacion.whiteboxtesting.Test_maxAbsolute" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Test_maxAbsolute" />
+        <item itemvalue="JUnit.Test_foo2" />
+        <item itemvalue="JUnit.Test_foo2.test3" />
+        <item itemvalue="JUnit.Test_foo1" />
         <item itemvalue="JUnit.Test_convertInt" />
-        <item itemvalue="JUnit.Test_foo1.test" />
       </list>
     </recent_temporary>
   </component>
@@ -86,8 +137,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634718282903</updated>
+      <workItem from="1643106483829" duration="4034000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -99,5 +154,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
