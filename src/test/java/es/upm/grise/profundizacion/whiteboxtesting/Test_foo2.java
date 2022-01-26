@@ -23,23 +23,16 @@ public class Test_foo2 {
 	}
 
 	@Test
-	@DisplayName("a<b")
+	@DisplayName("a<b, segundo if se cumple")
 	public void foo2_test2() {
-		Exercises exercises = new Exercises();
-		int a = 3;
-		int b = 10;
-
-		assertEquals(2, exercises.foo2(a, b), 0);
+		assertEquals(2, ex.foo2(-1, 5), 0);
 	}
 
 	@Test
-	@DisplayName("a<b, segundo if no se cumple")
+	@DisplayName("a<b, segondo if no se cumple")
 	public void foo2_test3() {
-		Exercises exercises = new Exercises();
-		int a = 3;
-		int b = 10;
-
-		assertEquals(2, exercises.foo2(a, b), 0);
+		assertEquals(7.5, ex.foo2(5, 10), 0);
 	}
+
 
 }
