@@ -18,13 +18,13 @@ public class Test_foo1 {
 
 	@Test
 	@DisplayName("x>5")
-	public void foo1_test1() {
+	public void foo1_xGreatery() {
 		assertEquals(0.5, ex.foo1(10,10), 0);
 	}
 
 	@Test
 	@DisplayName("x<=5")
-	public void foo1_test2() {
+	public void foo1_xSmallery() {
 		assertEquals(2, ex.foo1(5,10), 0);
 	}
 
