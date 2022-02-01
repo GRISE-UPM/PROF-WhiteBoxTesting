@@ -16,27 +16,39 @@ public class Test_foo1 {
 		System.out.println("Executed after all tests have been run");
 	}
 
+
 	@Test
-	public void test_y_0() throws InvalidNumberException{
+	public void test_acceso_bucle_if() throws InvalidNumberException{
 		Exercises c = new Exercises();
-		assertEquals(0, c.foo1(1,0), 0.01);
+		assertEquals(0.0625, c.foo1(6,1), 0.01);
 	}
 
 	@Test
-	public void test_x_1() throws InvalidNumberException{
+	public void test_sin_acceso_bucle() throws InvalidNumberException{
 		Exercises c = new Exercises();
 		assertEquals(1, c.foo1(1,1), 0.01);
 	}
 
 	@Test
-	public void test_y_5() throws InvalidNumberException{
+	public void test_y_mayor_x() throws InvalidNumberException{
 		Exercises c = new Exercises();
-		assertEquals(5, c.foo1(1,5), 0.01);
+		assertEquals(2, c.foo1(1,2), 0.01);
 	}
 
 	@Test
-	public void test_y_10() throws InvalidNumberException{
+	public void test_cero() throws InvalidNumberException{
 		Exercises c = new Exercises();
-		assertEquals(1, c.foo1(6,16), 0.01);
+		Exception ex = null;
+		try {
+			c.foo1(0,0);
+		} catch (Exception a) {
+			ex = a;
+		}
+	}
+
+	@Test
+	public void test_sin_acceso_bucle_5() throws InvalidNumberException{
+		Exercises c = new Exercises();
+		assertEquals(0.2, c.foo1(5,1), 0.01);
 	}
 }

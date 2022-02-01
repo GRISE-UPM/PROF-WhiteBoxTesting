@@ -17,24 +17,37 @@ public class Test_maxAbsolute {
 	}
 
 	@Test
-	public void test_int_4() throws InvalidNumberException{
+	public void test_acceso_buble_if() throws InvalidNumberException{
 		Exercises c = new Exercises();
-		//char pl[] = {'p','a', 'l', 'a', 'b', 'r', 'a'};
+		int num[] = {1,2,3,4,5,6};
+		assertEquals(-1, c.maxAbsolute(num));
+	}
+
+	@Test
+	public void test_sin_acceso_primer_bucle_if() throws InvalidNumberException{
+		Exercises c = new Exercises();
 		int num[] = {1,2,3,4};
 		assertEquals(4, c.maxAbsolute(num));
 	}
 
 	@Test
-	public void test_int_neg() throws InvalidNumberException{
+	public void test_sin_entrar_bucle_if_de_for() throws InvalidNumberException{
+		Exercises c = new Exercises();
+		int num[] = {1,2,3};
+		assertEquals(3, c.maxAbsolute(num));
+	}
+
+	@Test
+	public void test_entra_bucle_if_de_for() throws InvalidNumberException{
 		Exercises c = new Exercises();
 		int num[] = {-1,-2,-3};
 		assertEquals(3, c.maxAbsolute(num));
 	}
 
 	@Test
-	public void test_int_cero() throws InvalidNumberException{
+	public void test_entra_bucle_if_for_una_vez() throws InvalidNumberException{
 		Exercises c = new Exercises();
-		int num[] = {0,-2,-3};
+		int num[] = {-1,2,3};
 		assertEquals(3, c.maxAbsolute(num));
 	}
 

@@ -20,7 +20,7 @@ public class Test_convertInt {
 	}
 
 	@Test
-	public void test_char_7() throws Exception {
+	public void test_entra_primer_if() throws Exception {
 		Exercises c = new Exercises();
 		Exercises.convertInt e = c.new convertInt();
 		Exception ex = null;
@@ -33,12 +33,11 @@ public class Test_convertInt {
 	}
 
 	@Test
-	public void test_char_12() throws Exception {
+	public void test_entra_solo_for() throws Exception {
 		Exercises c = new Exercises();
 		Exercises.convertInt e = c.new convertInt();
 		Exception ex = null;
-		char pl[] = {'1', '2',};
-		//System.out.println(e.convert(pl) + "Rsultado");
+		char pl[] = {'1', '2'};
 		assertEquals(12, e.convert(pl));
 	}
 
@@ -47,7 +46,7 @@ public class Test_convertInt {
 		Exercises c = new Exercises();
 		Exercises.convertInt e = c.new convertInt();
 		Exception ex = null;
-		char pl[] = {'3', '2', '6','8'};
+		char pl[] = {'3', '2', '7', '6','8'};
 		try {
 			e.convert(pl);
 		} catch (Exception ez) {
@@ -60,12 +59,21 @@ public class Test_convertInt {
 		Exercises c = new Exercises();
 		Exercises.convertInt e = c.new convertInt();
 		Exception ex = null;
-		char pl[] = {'-', '3', '2', '6','8'};
+		char pl[] = {'-', '3', '2', '7', '6','8'};
 		try {
 			e.convert(pl);
 		} catch (Exception ez) {
 			ex = ez;
 		}
+	}
+
+	@Test
+	public void test_entra_if_0() throws Exception {
+		Exercises c = new Exercises();
+		Exercises.convertInt e = c.new convertInt();
+		Exception ex = null;
+		char pl[] = {'-', '1', '2'};
+		assertEquals(-12, e.convert(pl));
 	}
 
 }
