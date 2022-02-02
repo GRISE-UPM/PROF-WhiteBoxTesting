@@ -16,7 +16,8 @@ public class Exercises {
 			b = a; 
 			a = tmp;
 		}
-		if (Math.cos(a) < 0 || Math.cos(b) > 0) {
+		if (Math.cos(a) < 0 ||
+				Math.cos(b) > 0) {
 			a = 1; b = 3;
 		}
 		return (a + b) / 2;

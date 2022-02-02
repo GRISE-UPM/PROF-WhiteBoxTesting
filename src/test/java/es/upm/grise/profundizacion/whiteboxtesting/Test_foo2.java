@@ -15,9 +15,22 @@ public class Test_foo2 {
 	}
 	
 	@Test
-	public void testAGreaterThanB() {
+	public void testASmallerThanB() {
 		Exercises exercises = new Exercises();
 		assertEquals(exercises.foo2(1/2, 1), 2, 0.001);
+	}
+	
+	@Test
+	public void testAGreaterThanB() {
+		Exercises exercises = new Exercises();
+		assertEquals(exercises.foo2(1, 1/2), 2, 0.001);
+	}
+	
+	@Test
+	public void testNotEnteringCosenus() {
+		Exercises exercises = new Exercises();
+		double b = Math.cos(1);
+		assertEquals(exercises.foo2(1, 90), 45.5, 0.001);
 	}
 
 }

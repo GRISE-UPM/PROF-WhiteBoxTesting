@@ -24,4 +24,9 @@ public class Test_maxAbsolute {
 		assertEquals(10, exercises.maxAbsolute(new int[]{10,2,3,4}));
 	}
 
+	@Test
+	public void testNumberIsNegative() {
+		assertEquals(10, exercises.maxAbsolute(new int[]{-10,2,3,4}));
+	}
+	
 }
