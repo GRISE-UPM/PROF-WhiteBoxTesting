@@ -2,7 +2,8 @@ package es.upm.grise.profundizacion.whiteboxtesting;
 
 import static org.junit.Assert.*;
 
-import org.junit.Test;
+//import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeAll;
 
 public class Test_foo1 {
