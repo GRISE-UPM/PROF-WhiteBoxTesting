@@ -16,6 +16,8 @@
 		<junit-jupiter.version>5.6.2</junit-jupiter.version>
 		<maven.version>3.8.0</maven.version>
 		<java.version>11</java.version>
+		<maven.compiler.source>8</maven.compiler.source>
+		<maven.compiler.target>8</maven.compiler.target>
 	</properties>
 
 	<dependencies>

@@ -2,18 +2,18 @@ package es.upm.grise.profundizacion.whiteboxtesting;
 
 public class Exercises {
 
-	public float foo1(float x, float y) {     
-		if (x > 5)    
+	public float foo1(float x, float y) {
+		if (x > 5)
 			x += 10;
-		y = y / x;   
-		return y; 
-	} 
+		y = y / x;
+		return y;
+	}
 
-	public float foo2(float a, float b) {    
+	public float foo2(float a, float b) {
 		if (a > b) {
 			float tmp;
 			tmp = b;
-			b = a; 
+			b = a;
 			a = tmp;
 		}
 		if (Math.cos(a) < 0 || Math.cos(b) > 0) {
@@ -35,7 +35,7 @@ public class Exercises {
 		return max_value;
 	}
 
-	public class convertInt {
+	public static class convertInt {
 		public int convert(char[] str) throws Exception{
 			if (str.length > 6) 
 				throw new Exception(); 
