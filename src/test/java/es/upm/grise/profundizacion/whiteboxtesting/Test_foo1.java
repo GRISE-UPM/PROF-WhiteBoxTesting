@@ -8,7 +8,13 @@ public class Test_foo1 {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		Exercises ex = new Exercises();
+		assertEquals(1.0, ex.foo1(10, 20), 0.0);
 	}
 
+	@Test
+	public void test2() {
+		Exercises ex = new Exercises();
+		assertEquals(1.0, ex.foo1(4, 4), 0.0);
+	}
 }
