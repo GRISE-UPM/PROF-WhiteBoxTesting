@@ -15,8 +15,9 @@ class Test_convertIntTestTest {
 		convertInt converter = exc.new convertInt();
 		
 		char[] num = {'9','\0'};
+		int numReal = 9;
 		
-		assertEquals(9,converter.convert(num));
+		assertEquals(numReal,converter.convert(num));
 		// fail("Not yet implemented");
 	}
 
