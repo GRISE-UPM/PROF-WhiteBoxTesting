@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import es.upm.grise.profundizacion.whiteboxtesting.Exercises.convertInt;
 
-public class Test_convertInt {
+public class Test_convertIntTest {
 
 	@Test
 	public void test() throws Exception {
