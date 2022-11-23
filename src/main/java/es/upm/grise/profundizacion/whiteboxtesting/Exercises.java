@@ -1,5 +1,9 @@
 package es.upm.grise.profundizacion.whiteboxtesting;
 
+import org.junit.experimental.runners.Enclosed;
+import org.junit.runner.RunWith;
+
+@RunWith(Enclosed.class)
 public class Exercises {
 
 	public float foo1(float x, float y) {     
@@ -35,8 +39,8 @@ public class Exercises {
 		return max_value;
 	}
 
-	public class convertInt {
-		public int convert(char[] str) throws Exception{
+	public static class convertInt {
+		public static int convert(char[] str) throws Exception{
 			if (str.length > 6) 
 				throw new Exception(); 
 			int number=0;int digit; int i=0;
