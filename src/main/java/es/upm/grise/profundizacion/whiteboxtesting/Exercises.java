@@ -51,6 +51,10 @@ public class Exercises {
 			if (number > 32767 || number < -32768) 
 				throw new Exception();
 			return number;
-		}
+		}		
+		
 	}
+	
 }
+
+
