@@ -2,13 +2,37 @@ package es.upm.grise.profundizacion.whiteboxtesting;
 
 import static org.junit.Assert.*;
 
-import org.junit.Test;
+import org.junit.jupiter.api.*;
 
 public class Test_maxAbsolute {
 
-	@Test
-	public void test() {
-		fail("Not yet implemented");
+	Exercises ex;
+	
+	@BeforeEach
+	public void init() {
+		ex = new Exercises();
 	}
 
+	@DisplayName("Test 1 -> numbers.length > 5")
+	@Test
+	public void testmaxAbsoluteNumbersBiggerThan5() {
+		int [] numbers = {1,1,1,1,1,1};
+		assertEquals(-1, ex.maxAbsolute(numbers),1);
+	}
+	
+	@DisplayName("Test 1 -> numbers.length < 5")
+	@Test
+	public void testmaxAbsoluteNumbersLessThan5() {
+		int [] numbers = {1,1};
+		assertEquals(1, ex.maxAbsolute(numbers),1);
+	}
+
+	@DisplayName("Test 1 -> numbers.length < 5 and if")
+	@Test
+	public void testmaxAbsoluteNumbersLessThan5If() {
+		int [] numbers = {1,-1};
+		assertEquals(1, ex.maxAbsolute(numbers),1);
+	}
+
+	
 }
