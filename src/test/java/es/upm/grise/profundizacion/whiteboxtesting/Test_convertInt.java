@@ -22,6 +22,7 @@ public class Test_convertInt {
   char[] str7 = {'0','0','9'};
   char[] str8 = {'3','2','7','6','7'};
   char[] str9 = {'9','9','9','9','9','9'};
+  char[] str10 = {'-','9','1','1','9','9'};
 
 	@Test
 	public void testStrLessThan6() {
@@ -85,5 +86,9 @@ public class Test_convertInt {
       ci.convert(str9);
     });
     assertEquals(null, exception.getMessage());
+    Exception exception2 = assertThrows(Exception.class, () -> {
+      ci.convert(str10);
+    });
+    assertEquals(null, exception2.getMessage());
   }
 }
