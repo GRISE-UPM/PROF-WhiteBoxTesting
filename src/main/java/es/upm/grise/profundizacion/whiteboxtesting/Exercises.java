@@ -1,14 +1,24 @@
 package es.upm.grise.profundizacion.whiteboxtesting;
 
 public class Exercises {
-
+	
+	
+/*
+ * foo1(x,y) si x > 5, x = x + 10
+ * y = y/x
+ */
 	public float foo1(float x, float y) {     
 		if (x > 5)    
 			x += 10;
 		y = y / x;   
 		return y; 
 	} 
-
+/*
+ * foo2(a,b) si a > b -> intercambia los valores de a y b
+ * si (cos(a) < 0 o cos(b) > 0) -> a = 1 y b=3
+ * Devuelve a + b / 2
+ * Esta en radianes
+ */
 	public float foo2(float a, float b) {    
 		if (a > b) {
 			float tmp;
@@ -23,6 +33,9 @@ public class Exercises {
 	}
 
 
+	/*
+	 * Devuelve el valor más alto en valor absoluto de un vector
+	 */
 	public int maxAbsolute(int[] numbers){
 		if(numbers.length > 5)
 			return -1;
@@ -35,6 +48,9 @@ public class Exercises {
 		return max_value;
 	}
 
+	/*
+	 * Convierte un string en un numero. da error si la longitud del string es > 6
+	 */
 	public class convertInt {
 		public int convert(char[] str) throws Exception{
 			if (str.length > 6) 
