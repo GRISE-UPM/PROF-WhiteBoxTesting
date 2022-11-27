@@ -42,8 +42,9 @@
 			<version>${junit-jupiter.version}</version>
 			<scope>test</scope>
 		</dependency>
+		
 	</dependencies>
-
+	
 	<build>
 		<plugins>
 			<!-- https://stackoverflow.com/questions/49398894/unable-to-compile-simple-java-10-java-11-project-with-maven -->
@@ -62,6 +63,26 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.0</version>
 			</plugin>
+			<plugin>
+		<groupId>org.jacoco</groupId>
+		<artifactId>jacoco-maven-plugin</artifactId>
+		<version>0.8.2</version>
+		<executions>
+			<execution>
+				<goals>
+					<goal>prepare-agent</goal>
+				</goals>
+			</execution>
+			<execution>
+				<id>report</id>
+				<phase>test</phase>
+				<goals>
+					<goal>report</goal>
+				</goals>
+			</execution>
+		</executions>
+	</plugin>
 		</plugins>
+		
 	</build>
 </project>

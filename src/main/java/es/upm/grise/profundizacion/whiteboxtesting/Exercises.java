@@ -9,11 +9,16 @@ public class Exercises {
 		return y; 
 	} 
 
+	/*
+	 * a > b, intercambio a <---> b
+	 * si a< pi/2 (1.57) o b> pi/2 (1.57) --> a=1, b=3 --> resultado =2
+	 * si no, media de ambos
+	 */
 	public float foo2(float a, float b) {    
 		if (a > b) {
 			float tmp;
 			tmp = b;
-			b = a; 
+			b = a; 		
 			a = tmp;
 		}
 		if (Math.cos(a) < 0 || Math.cos(b) > 0) {
@@ -35,6 +40,13 @@ public class Exercises {
 		return max_value;
 	}
 
+	/*
+	 * si el string tiene mas de 6 carafcteres -> excepción
+	 * si el primer caracter es '-' no se recorre dicho caracter
+	 * si el primer caracter es '-'  se vuelve negativo el numero
+	 * Si numero > 32767 o < -32768 entonces excepción
+	 * Se devuelve numero
+	 */
 	public class convertInt {
 		public int convert(char[] str) throws Exception{
 			if (str.length > 6) 
