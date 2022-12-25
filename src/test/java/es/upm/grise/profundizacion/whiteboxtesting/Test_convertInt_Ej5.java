@@ -1,10 +1,9 @@
 package es.upm.grise.profundizacion.whiteboxtesting;
 
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 
-public class Test_convertInt {
+public class Test_convertInt_Ej5 {
 
 	@Test
 	public void test() {
