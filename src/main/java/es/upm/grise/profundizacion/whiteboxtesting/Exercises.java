@@ -2,7 +2,7 @@ package es.upm.grise.profundizacion.whiteboxtesting;
 
 public class Exercises {
 
-	public float foo1(float x, float y) {     
+	public float foo1(float x, float y) {   
 		if (x > 5)    
 			x += 10;
 		y = y / x;   
