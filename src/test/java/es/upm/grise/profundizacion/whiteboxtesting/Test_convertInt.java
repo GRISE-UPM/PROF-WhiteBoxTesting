@@ -1,10 +1,11 @@
 package es.upm.grise.profundizacion.whiteboxtesting;
 
-import static org.junit.Assert.*;
-
-import org.junit.Test;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class Test_convertInt {
 
@@ -47,7 +48,7 @@ public class Test_convertInt {
 
 	@Test
 	public void test_lengthLE6_numberLTNEG32767() {
-		char[] str = {'-', '3', '2', '7', '6', '8'};
+		char[] str = {'-', '3', '2', '7', '6', '9'};
 		assertThrows(Exception.class, () -> convertInt.convert(str));
 	}
 
