@@ -17,7 +17,7 @@ public class Test_maxAbsolute {
 	}
 	
 	@Test
-	public void noNumbers() {
+	public void noNumbers() { // Camino 1 - 3 - 8
 		
 		// Inicializacion
 		nums = new int[]{};
@@ -27,7 +27,7 @@ public class Test_maxAbsolute {
 	}
 
 	@Test
-	public void moreThan5Numbers() {
+	public void moreThan5Numbers() { // Camino 1 - 2
 		
 		// Inicializacion
 		nums = new int[]{1, 2, 3, 4, 5, 6};
@@ -37,7 +37,7 @@ public class Test_maxAbsolute {
 	}
 	
 	@Test
-	public void maxValuePositive() {
+	public void maxValuePositive() { // Camino 1 - 3 - 4 - 6 - 7 (...) - 8
 		
 		// Inicializacion
 		nums = new int[]{1, 2, 3, 4, 5};
@@ -47,7 +47,7 @@ public class Test_maxAbsolute {
 	}
 	
 	@Test
-	public void maxValueNegative() {
+	public void maxValueNegative() { // Camino 1 - 3 - 4 - 5 - 6 (...) - 8
 		
 		// Inicializacion
 		nums = new int[]{1, 2, 3, 4, -5};

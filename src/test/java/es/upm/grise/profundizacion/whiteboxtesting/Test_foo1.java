@@ -17,7 +17,7 @@ public class Test_foo1 {
 	}
 	
 	@Test
-	public void xGreaterThan5() {
+	public void xGreaterThan5() { // Camino 1 - 2 - 3
 		
 		// Inicializacion
 		x = 6;
@@ -28,7 +28,7 @@ public class Test_foo1 {
 	}
 
 	@Test
-	public void xLessOrEqual5() {
+	public void xLessOrEqual5() { // Camino 1 - 3
 		
 		// Inicializacion
 		x = 5;
