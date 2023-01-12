@@ -8,20 +8,16 @@ import org.junit.Test;
 public class Test_foo1 {
 	
 	Exercises e = new Exercises();	
-
-	@Test
-	public void xEquals5test() {
-		float x = 5;
-		float y = 10;
-		assertEquals(2, e.foo1(x, y));
-	}
 	
-	// test si x == 0
+	// Hay dos caminos posibles
+	// 	1 - 2 - 3 - 4 - 5 (si x > 5)
+	//  1 - 2 - 4 - 5
+
 	@Test	
 	public void xSmallerThan5test() {
-		float x = 0;
+		float x = 5;
 		float y = 5;
-		assertEquals(Float.POSITIVE_INFINITY, e.foo1(x, y));
+		assertEquals(1, e.foo1(x, y));
 	}
 	
 	@Test

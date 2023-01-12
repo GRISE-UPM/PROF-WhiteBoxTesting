@@ -8,6 +8,12 @@ public class Test_foo2 {
 
 	Exercises e = new Exercises();
 	
+	// Hay 4 caminos posibles
+	// 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10
+	// 1 - 2 - 3 - 4 - 5 - 6 - 7 - 10
+	// 1 - 2 - 7 - 8 - 9 - 10
+	// 1 - 2 - 7 - 10
+	
 	// entra al primer if pero no al segundo
 	@Test
 	public void aGraterThanbTest() {
