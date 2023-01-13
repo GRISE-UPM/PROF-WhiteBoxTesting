@@ -31,16 +31,16 @@ public class Test_convertInt {
 	@Test
 	public void Test_String_Length_less_than_6_Positive() throws Exception {
 
-		char [] char_array= {'1','6','3','4','5'};
-		assertEquals(16345,  ejs.convert(char_array),1);
+		char [] char_array= {'1','6','8','9','5'};
+		assertEquals(16895,  ejs.convert(char_array),1);
 	
 	}
 	
 	@Test
 	public void Test_String_Length_less_than_6_Negative() throws Exception {
 
-		char [] char_array= {'-','6','3','4','5'};
-		assertEquals(-6345,  ejs.convert(char_array),1);
+		char [] char_array= {'-','6','3','8','9'};
+		assertEquals(-6389,  ejs.convert(char_array),1);
 	
 	}
 	@Test

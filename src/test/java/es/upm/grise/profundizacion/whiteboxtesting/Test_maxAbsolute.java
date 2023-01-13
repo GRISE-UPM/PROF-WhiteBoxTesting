@@ -14,7 +14,7 @@ public class Test_maxAbsolute {
 		
 	}
 	@Test
-	public void Testing_Max_Array_length() {
+	public void Testing_Array_length_Greater_Than_5() {
 
 		int [] int_array= {1,2,3,4,5,6};
 		
@@ -22,7 +22,7 @@ public class Test_maxAbsolute {
 
 	}
 	@Test
-	public void Testing_Max_Number_Positive() {
+	public void Testing_Array_length_Lesser_Than_5_All_Positive(){
 		
 		int [] int_array= {1,6,3,4,5};
 		
@@ -30,11 +30,20 @@ public class Test_maxAbsolute {
 
 	}
 	@Test
-	public void Testing_Max_Number_Negative_Numbers() {
+	public void Testing_Array_length_Lesser_Than_5_NOT_All_Positive() {
 
 		int [] int_array= {-9,3,-10,6,5,};
 		
 		assertEquals(10,ejs.maxAbsolute(int_array),1);
+
+	}
+	
+	@Test
+	public void Testing_Array_Empty() {
+
+		int [] int_array= {};
+		
+		assertEquals(0,ejs.maxAbsolute(int_array),1);
 
 	}
 
