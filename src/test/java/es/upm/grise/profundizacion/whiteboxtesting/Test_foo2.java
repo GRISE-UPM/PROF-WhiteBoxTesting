@@ -1,8 +1,8 @@
 package es.upm.grise.profundizacion.whiteboxtesting;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.fail;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class Test_foo2 {
 
