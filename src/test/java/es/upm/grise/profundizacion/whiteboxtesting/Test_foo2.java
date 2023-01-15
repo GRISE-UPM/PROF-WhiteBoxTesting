@@ -9,23 +9,39 @@ public class Test_foo2 {
 
 	Exercises ex = new Exercises();
 
-	@Test
-	public void a_higher_than_b() {
-		assertEquals(2, ex.foo2(2,1));
-	}
-	
-	@Test
-	public void a_lower_than_b() {
-		assertEquals(2, ex.foo2(1,5));
-	}
+    @Test
+    public void testFoo2_a_greater_than_b_2() {
+        float a = 2;
+        float b = 1;
+        float expected = 2;
+        float result = ex.foo2(a, b);
+        assertEquals(expected, result);
+    }
+		
+    @Test
+    public void testFoo2_a_lower_than_b_2() {
+        float a = 1;
+        float b = 5;
+        float expected = 2;
+        float result = ex.foo2(a, b);
+        assertEquals(expected, result);
+    }
 
 	@Test
-	public void a_b_zero() {
-		assertEquals(2, ex.foo2(0,0));
+	public void testFoo2_a_b_zero() {
+        float a = 0;
+        float b = 0;
+        float expected = 2;
+        float result = ex.foo2(a, b);
+        assertEquals(expected, result);
 	}
 	
 	@Test
-	public void a_non_zero_b_zero() {
-		assertEquals(3, ex.foo2(6,0));
+	public void testFoo2_a_non_zero_b_zero() {
+        float a = 6;
+        float b = 0;
+        float expected = 3;
+        float result = ex.foo2(a, b);
+        assertEquals(expected, result);
 	}
 }
