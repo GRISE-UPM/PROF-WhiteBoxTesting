@@ -27,14 +27,21 @@ public class Test_maxAbsolute {
 	}
 	
 	@Test
-	public void onNumbersWithMaxNonNegativeValue() {
-		assertEquals(34, e.maxAbsolute(new int[]{ 1,2,34,-25,5 }),0.01);
+	public void onNumbersWithNonNegativeValues() {
+		// Performs max_value = Math.max(max_value, numbers[i]);
+		assertEquals(30, e.maxAbsolute(new int[]{ 1,2,30,4,5 }),0.01);
 	}
 	
 	@Test
-	public void onNumbersWithMaxNegativeValue() {
-		assertEquals(30, e.maxAbsolute(new int[]{ 1,2,-30,4,5 }),0.01);
+	public void onNumbersWithAllNegativeValues() {
+		// Performs max_value = Math.max(max_value,Math.abs(numbers[i]));
+		assertEquals(30, e.maxAbsolute(new int[]{ -1,-2,-30,-4,-5 }),0.01);
+	}
+	
+	@Test
+	public void onNumbersWithPositiveAndNegativeValues() {
+		// Performs both (since it is a loop, if else are not exclusive)
+		assertEquals(40, e.maxAbsolute(new int[]{ -1,2,-30,40,-5 }),0.01);
 	}
 
 }
-  
