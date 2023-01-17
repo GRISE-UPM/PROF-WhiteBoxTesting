@@ -12,16 +12,20 @@ public class Test_convertInt {
 	
 	@Test
 	public void more_than_5_characters() throws Exception{
-		char[] c = {'4', '6', '7', '2', '1', '9'};
+		char[] c = {'4', '6', '7', '2', '1', '9', '2'};
 		assertThrows(Exception.class, () -> ci.convert(c));
 	}
 	
 	@Test
-	public void out_of_bound_number() throws Exception{
+	public void out_of_bound_positive_number() throws Exception{
 		char[] c1 = {'3', '2', '7', '6', '8'};
-		char[] c2 = {'-', '3', '2', '7', '6', '9'};
 		assertThrows(Exception.class, () -> ci.convert(c1));
-		assertThrows(Exception.class, () -> ci.convert(c2));
+	}
+	
+	@Test
+	public void out_of_bound_negative_number() throws Exception{
+		char[] c1 = {'-', '3', '2', '7', '6', '9'};
+		assertThrows(Exception.class, () -> ci.convert(c1));
 	}
 	
 	@Test

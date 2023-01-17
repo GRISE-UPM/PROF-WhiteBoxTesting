@@ -16,12 +16,26 @@ public class Test_maxAbsolute {
 	
 	@Test
 	public void less_than_5_numbers() {
-		int[] n1 = {1, 3, 7, 0, -23};
-		int[] n2 = {1, 3, 7, 14};
-		int[] n3 = {14, 78, 345, 0, -23};
-		assertEquals(23, e.maxAbsolute(n1));
-		assertEquals(14, e.maxAbsolute(n2));
-		assertEquals(345, e.maxAbsolute(n3));
+		int[] n1 = {1, 3, 7, 2};
+		assertEquals(7, e.maxAbsolute(n1));
+	}
+	
+	@Test
+	public void numbers_5() {
+		int[] n1 = {1, 3, -7, 0, 350};
+		assertEquals(350, e.maxAbsolute(n1));
+	}
+	
+	@Test
+	public void negative_numbers_only() {
+		int[] n1 = {-1, -3, -7, -360};
+		assertEquals(360, e.maxAbsolute(n1));
+	}
+	
+	@Test
+	public void positive_negative_numbers_only() {
+		int[] n1 = {1, -3, 7, -360};
+		assertEquals(360, e.maxAbsolute(n1));
 	}
 
 }
