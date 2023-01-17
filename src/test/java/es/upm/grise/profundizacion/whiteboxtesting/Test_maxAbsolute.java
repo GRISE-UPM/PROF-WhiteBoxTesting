@@ -27,13 +27,14 @@ public class Test_maxAbsolute {
 	}
 	
 	@Test
-	public void onNumbersWithNonNegativeValues() {
-		assertEquals(30, e.maxAbsolute(new int[]{ 1,2,30,4,5 }),0.01);
+	public void onNumbersWithMaxNonNegativeValue() {
+		assertEquals(34, e.maxAbsolute(new int[]{ 1,2,34,-25,5 }),0.01);
 	}
 	
 	@Test
-	public void onNumbersWithNegativeValues() {
+	public void onNumbersWithMaxNegativeValue() {
 		assertEquals(30, e.maxAbsolute(new int[]{ 1,2,-30,4,5 }),0.01);
 	}
 
 }
+  
