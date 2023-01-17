@@ -27,7 +27,6 @@ public class Test_foo1 {
 	// y = ... if x < ...
 	// where you additionally have to study critical points 
 	
-	@Disabled
 	@Test
 	public void onXEqualTo0() {
 		// In Java division by 0 seems to work, so two tests may suffice
