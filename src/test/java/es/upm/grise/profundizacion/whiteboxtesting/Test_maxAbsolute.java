@@ -30,4 +30,30 @@ public class Test_maxAbsolute {
 		assertEquals(11, res);
 	}
 
+	// Structural test cases - 3 areas
+	// 1. numbers.length > 5
+	@Test
+	public void biggerArrayTest2() {
+		int [] numbers = {1,2,3,4,5,6,7,8,9};
+		int res =  myExercises.maxAbsolute(numbers);
+		// Expect the first stop condition
+		assertEquals(-1, res);
+	}
+
+	// 2. numbers.length <= 5 and numbers > 0
+	@Test
+	public void positiveNumbersTest() {
+		int [] numbers = {1,2,3,4,5};
+		int res =  myExercises.maxAbsolute(numbers);
+		assertEquals(5, res);
+	}
+
+	// 3. numbers.length <= 5 and numbers < 0
+	@Test
+	public void negativeNumbersTest() {
+		int [] numbers = {-1,-2,-3,-4,-5};
+		int res =  myExercises.maxAbsolute(numbers);
+		assertEquals(-1, res);
+	}
+
 }
