@@ -53,7 +53,7 @@ public class Test_maxAbsolute {
 	public void negativeNumbersTest() {
 		int [] numbers = {-1,-2,-3,-4,-5};
 		int res =  myExercises.maxAbsolute(numbers);
-		assertEquals(-1, res);
+		assertEquals(5, res);
 	}
 
 }
