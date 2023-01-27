@@ -27,6 +27,9 @@ public class Test_foo1 {
 		float y = 8;
 		assertEquals((float)0.5, e.foo1(x, y));
 	}
-
+	@Test
+	public void testfoo1() {
+		assertEquals(4,e.foo1(1,4));
+	}
 
 }
