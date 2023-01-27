@@ -1,8 +1,8 @@
 package es.upm.grise.profundizacion.whiteboxtesting;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.fail;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /*
  * Basis path testing with execution diagram (basis path) located in ex6.jpg
