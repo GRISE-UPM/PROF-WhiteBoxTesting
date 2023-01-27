@@ -4,6 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+/*
+ * Basis path testing with execution diagram (basis path) located in ex6.jpg
+ */
 public class Test_foo1 {
 
   private Exercises ex = new Exercises();

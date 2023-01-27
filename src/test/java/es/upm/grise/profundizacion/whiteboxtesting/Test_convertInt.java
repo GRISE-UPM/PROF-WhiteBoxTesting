@@ -6,6 +6,10 @@ import org.junit.Test;
 
 import es.upm.grise.profundizacion.whiteboxtesting.Exercises.convertInt;
 
+
+/*
+ * Basis path testing with execution diagram (basis path) located in ex6_convertInt.jpg
+ */
 public class Test_convertInt {
 
   public Exercises ex = new Exercises();
@@ -23,8 +27,53 @@ public class Test_convertInt {
   char[] str8 = {'3','2','7','6','7'};
   char[] str9 = {'9','9','9','9','9','9'};
   char[] str10 = {'-','9','1','1','9','9'};
+  char[] str11 = {};
 
-	@Test
+  //base test: str.length < 6 && str[0] != '-' && i >= str.length && 32768 <= number <= 32767
+  //test fails for empty vector, which is not handled. Base test will then be changed.
+  @Test
+	public void testEmptyVector() throws Exception {
+		assertEquals(0, ci.convert(str11));
+	}
+
+  //new base test: str.length > 6
+  @Test
+	public void testVectorLengthGreaterThan6(){
+		assertThrows(Exception.class, () -> {
+      ci.convert(str9);
+    });
+	}
+
+  //branch test: str.length < 6 && str[0] == '-' && i <= str.length && 32768 <= number <= 32767
+  //This test tests two separate branches that have the same condition and therefore cannot be tested individually.
+  @Test
+	public void testNegativeVector() throws Exception {
+		assertEquals(-1450, ci.convert(str1));
+	}
+
+  //branch test: str.length < 6 && str[0] != '-' && i <= str.length && 32768 <= number <= 32767
+  @Test
+	public void testPositiveVector() throws Exception {
+		assertEquals(4501, ci.convert(str5));
+	}
+
+  //branch test: str.length < 6 && str[0] != '-' && i <= str.length && number >= -32768 && number > 32767
+  @Test
+	public void testPositiveOutOfBoundsVector() throws Exception {
+    assertThrows(Exception.class, () -> {
+      ci.convert(str9);
+    });
+	}
+
+  //branch test: str.length < 6 && str[0] != '-' && i <= str.length && number < -32768 && number <= 32767
+  @Test
+	public void testNegativeOutOfBoundsVector() throws Exception {
+    assertThrows(Exception.class, () -> {
+      ci.convert(str0);
+    });
+	}
+
+	/*@Test
 	public void testStrLessThan6() {
 		Exception exception = assertThrows(Exception.class, () -> {
       ci.convert(str0);
@@ -90,5 +139,5 @@ public class Test_convertInt {
       ci.convert(str10);
     });
     assertEquals(null, exception2.getMessage());
-  }
+  }*/
 }
